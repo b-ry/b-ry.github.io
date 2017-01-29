@@ -3,29 +3,22 @@
 <h2 class="section-title">Work</h2>
    
    <ul class="post-list row no-gutters">
+      {% assign featuredPosts = site.posts | where:"featured", true %}
+      {% for post in featuredPosts %}
+        <li class="featured col-sm-12 col-md-12 col-lg-8">
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+            
+            <div class="project-content">
+              <h2>
+                {{ post.title }}
+              </h2>
+            </div>
 
-      {% for post in site.posts %}
-        {% if post.featured == true %}
-          {% capture count %}{{ count | plus: '1' }}{% endcapture %}
-            {% if count == '1' %}
-
-              <li class="featured col-sm-12 col-md-12 col-lg-8">
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                  
-                  <div class="project-content">
-                    <h2>
-                      {{ post.title }}
-                    </h2>
-                  </div>
-
-                  {% if post.teaser-image %}
-                  <img src="{{site.baseurl}}/assets/img/{{post.teaser-image}}" />
-                  {% endif %}
-                </a>
-              </li> 
-
+            {% if post.teaser-image %}
+            <img src="{{site.baseurl}}/assets/img/{{post.teaser-image}}" />
             {% endif %}
-        {% endif %}
+          </a>
+        </li> 
       {% endfor %}
 
       {% assign featuredPosts = site.posts | where:"featured", false %}
