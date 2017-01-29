@@ -24,7 +24,7 @@ banner-image: projects/illustration/beat-the-heat.jpg
     <h2>b3 T-shirt illustration</h2>
 
     <p>The B3 was a non-profit venture to bring outdoor adventure and health awareness to Greeley, Colorado. The illustration was created as a unique image to be used on apparel.</p>
-    <p>Heavily influenced by Jay Ryan of The Bird Machine the process was completely done by hand. From the image creation to the hand cut rubylith used for color separations.</p>
+    <p>Heavily influenced by Jay Ryan of The Bird Machine the process was completely done by hand, from the image creation to the hand cut rubylith used for color separations.</p>
    </div>
 
   <div class="col-sm-12 col-md-8">
