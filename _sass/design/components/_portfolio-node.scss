@@ -4,9 +4,13 @@
 
 .portfolio-node .project-banner {
 	
-	@include media-breakpoint-up(lg) {
+	@include media-breakpoint-up(md) {
 		margin-right: auto;
 		width: 100%;
+	}
+	@include media-breakpoint-up(lg) {
+		margin-right: -20rem;
+		width: auto;
 	}
 	@include media-breakpoint-up(xl) {
 		margin-right: -40rem;

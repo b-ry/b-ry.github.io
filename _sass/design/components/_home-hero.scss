@@ -71,10 +71,12 @@
 }
 
 .img-overlay {
-	background-image: url(../img/theme/hero-bw.jpg); 
+	background-image: url(../assets/img/theme/hero-bw.jpg); 
 	position: absolute;
 	height: 100%;
 	width: 100%;
 	object-fit: fill;
 	opacity: .1;
+	top: 0;
+	left: 0;
 }

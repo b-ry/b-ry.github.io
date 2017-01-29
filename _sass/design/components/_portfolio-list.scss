@@ -12,26 +12,27 @@
 }
 
 .portfolio ul.post-list li {
-	// width: 35.9rem;
-	height: 46rem;
 	overflow: hidden;
 	margin: 0;
+	@include media-breakpoint-up(md) {
+    	height: 30rem;
+    }
 }
 
 .portfolio ul.post-list a {
 	background: transparent;
 	display: block;
-	// width: 35.9rem;
-	height: 46rem;
 	overflow: hidden;
 	border: none;
 	position: relative;
 	transition-duration: .2s;
-
 	display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+	@include media-breakpoint-up(md) {
+    	height: 30rem;
+    }
 
 	&:hover {
 		background: linear-gradient( -45deg, 
@@ -83,6 +84,7 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	top: 0;
 }
 
 .portfolio .project-content h2 {
@@ -91,7 +93,32 @@
 	line-height: 1;
 	padding: 1rem;
 	width: 90%;
-	height: 92%;
+	height: 87%;
 	margin: 5%;
-	border: 5px solid $primary;
+	border: 1px solid $primary;
+	@include media-breakpoint-up(md) {
+		height: 89%;
+	}
+	@include media-breakpoint-up(lg) {
+		height: 90%;
+	}
+	@include media-breakpoint-up(xl) {
+		height: 87%;
+	}
+}
+
+.portfolio .featured .project-content h2 {
+	width: 94.5%;
+	height: 93%;
+	margin: 2.5%;
+	border: 1px solid $primary;
+	@include media-breakpoint-up(md) {
+		height: 88%;
+	}
+	@include media-breakpoint-up(lg) {
+		height: 89.6%;
+	}
+	@include media-breakpoint-up(xl) {
+		height: 87%;
+	}
 }

@@ -21,3 +21,30 @@
     padding-left: 0;
   }
 }
+
+.row.img-section {
+  margin-right: auto;
+  width: 100%;
+  @include media-breakpoint-up(lg) {
+    margin-right: -20rem;
+    width: auto;
+  }
+}
+
+.btn {
+  text-decoration: none;
+  border-bottom: none;
+  font-size: 1.4rem;
+  font-size: 1.4rem;
+  position: relative;
+  padding: 0 .4rem 0 2rem;
+  i {
+    position: absolute;
+    top: 0.4rem;
+    left: 0;
+  }
+  &:hover {
+    text-decoration: none;
+    border-bottom: none;
+  }
+}

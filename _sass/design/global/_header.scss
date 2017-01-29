@@ -12,3 +12,28 @@
 	display: block;
 	border-bottom: 1px solid transparent;
 }
+
+.site-header .wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+.site-nav {
+	margin-left: auto;
+	position: relative;
+	z-index: 2;
+}
+
+.site-nav ul {
+	list-style-type: none;
+}
+
+.site-nav li {
+	display: inline;
+	margin: 0 .5rem;
+}
+
+.site-nav li a {
+	color: #ffffff;
+	border-bottom: none;
+}

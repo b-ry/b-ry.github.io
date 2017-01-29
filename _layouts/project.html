@@ -4,17 +4,19 @@ layout: portfolio-default
 <div class="project">
 
 	<div class="project-header">
-      <p class="service">{{ page.service }}</p>
+    <p class="service">{{ page.service }}</p>
 	  <h1 class="page-title">{{ page.title }}</h1>
+    <a class="btn" href="/#work"><i class="icon icon-circle-left"></i>Back</a>
 	</div>
 {% if page.banner-image %}
   <header class="project-banner">
-	  <img class="" src="{{site.baseurl}}/img/{{page.banner-image}}">
+	  <img class="" src="{{site.baseurl}}/assets/img/{{page.banner-image}}">
   </header>
 {% endif %}
 
   <article class="project-content">
     {{ content }}
   </article>
+  <a class="btn" href="/#work"><i class="icon icon-circle-left"></i>Back</a>
 
 </div>
