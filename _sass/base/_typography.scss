@@ -24,6 +24,7 @@ p a,
 	text-decoration: none;
 	white-space: nowrap;
 	padding: 0 .2rem;
+	z-index: 1;
 }
 
 p a::before,
@@ -82,8 +83,11 @@ h6 {
 
 .page-title {
 	margin: 0 0 .5rem;
-	font-size: 6.5rem;
+	font-size: 4rem;
 	line-height: 1;
+	@include media-breakpoint-up (md) {
+		font-size: 6.5rem;
+	}
 }
 
 .section-title {

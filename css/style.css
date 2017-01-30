@@ -1070,6 +1070,7 @@ p a,
   text-decoration: none;
   white-space: nowrap;
   padding: 0 .2rem;
+  z-index: 1;
 }
 
 p a::before,
@@ -1133,8 +1134,14 @@ h6 {
 
 .page-title {
   margin: 0 0 .5rem;
-  font-size: 6.5rem;
+  font-size: 4rem;
   line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .page-title {
+    font-size: 6.5rem;
+  }
 }
 
 .section-title {
@@ -2723,6 +2730,7 @@ body {
 
 #main img {
   width: 100%;
+  height: 100%;
 }
 
 .row {
@@ -2959,49 +2967,6 @@ ul.social-media-list span {
   }
 }
 
-.portfolio ul.post-list a:hover {
-  background: linear-gradient(-45deg, white 25%, rgba(255, 255, 255, 0.75) 25%, rgba(255, 255, 255, 0.75) 50%, white 50%, white 75%, rgba(255, 255, 255, 0.75) 75%, rgba(255, 255, 255, 0.75));
-  background-size: 200px 200px;
-  -webkit-animation: barberpole 8s linear infinite;
-  -moz-animation: barberpole 8s linear infinite;
-  animation: barberpole 8s linear infinite;
-}
-
-@-webkit-keyframes barberpole {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 200px 400px;
-  }
-}
-
-@-moz-keyframes barberpole {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 200px 400px;
-  }
-}
-
-@keyframes barberpole {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 200px 400px;
-  }
-}
-
-.portfolio ul.post-list a:hover h2 {
-  display: block;
-}
-
-.portfolio ul.post-list a h2 {
-  display: none;
-}
-
 .portfolio ul.post-list img {
   width: 100%;
   height: 100%;
@@ -3013,62 +2978,58 @@ ul.social-media-list span {
 .portfolio .project-content {
   position: absolute;
   width: 100%;
-  height: 100%;
-  top: 0;
+  bottom: 0;
 }
 
 .portfolio .project-content h2 {
-  color: #ff6f00;
-  font-size: 3rem;
+  background: #212121;
+  color: white;
+  font-size: 2rem;
   line-height: 1;
   padding: 1rem;
-  width: 90%;
-  height: 87%;
   margin: 5%;
-  border: 1px solid #ff6f00;
-}
-
-@media (min-width: 768px) {
-  .portfolio .project-content h2 {
-    height: 89%;
-  }
-}
-
-@media (min-width: 992px) {
-  .portfolio .project-content h2 {
-    height: 90%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .portfolio .project-content h2 {
-    height: 87%;
-  }
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 5;
 }
 
 .portfolio .featured .project-content h2 {
   width: 94.5%;
-  height: 93%;
   margin: 2.5%;
-  border: 1px solid #ff6f00;
 }
 
-@media (min-width: 768px) {
-  .portfolio .featured .project-content h2 {
-    height: 88%;
-  }
+.portfolio a {
+  overflow: hidden;
+  font-weight: 300;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  color: white;
+  vertical-align: bottom;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
-@media (min-width: 992px) {
-  .portfolio .featured .project-content h2 {
-    height: 89.6%;
-  }
+.portfolio a::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 111, 0, 0.5);
+  content: '';
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
 }
 
-@media (min-width: 1200px) {
-  .portfolio .featured .project-content h2 {
-    height: 87%;
-  }
+.portfolio a:hover::before,
+.portfolio a:focus::before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
 }
 
 .portfolio-node .project-header {
@@ -3112,8 +3073,8 @@ ul.social-media-list span {
   margin-bottom: 10rem;
 }
 
-.portrait {
-  margin: -3rem 0 0;
+.about .row {
+  margin-top: -2rem;
 }
 
 .portrait img {
@@ -3121,7 +3082,8 @@ ul.social-media-list span {
 }
 
 .about-content {
-  margin-top: 2rem;
+  background: #ececec;
+  padding-top: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

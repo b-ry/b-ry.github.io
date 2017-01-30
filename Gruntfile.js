@@ -4,10 +4,10 @@ module.exports = function (grunt) {
     var sassLib = ['bower_components'];
 
     var jsFileList = [
-      'js/plugins/_*.js',
-      'js/plugins/*.js',
-      'js/_*.js',
-      'js/*.js'
+      'assets/js/plugins/_*.js',
+      'assets/js/plugins/*.js',
+      'assets/js/_*.js',
+      'assets/js/*.js'
     ];
 
     // Show elapsed time after tasks run to visualize performance
@@ -23,7 +23,7 @@ module.exports = function (grunt) {
           },
           all: [
             'Gruntfile.js',
-            'js/_*.js'
+            'assets/js/_*.js'
           ]
         },
         concat: {
@@ -32,7 +32,7 @@ module.exports = function (grunt) {
           },
           dist: {
             src: jsFileList,
-            dest: 'js/dist/scripts.js',
+            dest: 'assets/js/scripts.js',
           },
         },
 

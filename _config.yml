@@ -9,3 +9,8 @@ exclude: ['node_modules', ‘css’, ‘_scss’]
 keep_files: ['_site/css']
 
 github_username:  b-ry
+
+collections:
+  work:
+    output: true
+    permalink: /work/:name

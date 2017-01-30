@@ -3,37 +3,37 @@
 <h2 class="section-title">Work</h2>
    
    <ul class="post-list row no-gutters">
-      {% assign featuredPosts = site.posts | where:"featured", true %}
-      {% for post in featuredPosts %}
-        <li class="featured col-sm-12 col-md-12 col-lg-8">
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+      {% assign featuredWork = site.work| where:"featured", true %}
+      {% for work in featuredWork %}
+        <li class="featured col-md-12 col-lg-8">
+          <a class="post-link" href="{{ work.url | prepend: site.baseurl }}">
             
             <div class="project-content">
               <h2>
-                {{ post.title }}
+                {{ work.title }}
               </h2>
             </div>
 
-            {% if post.teaser-image %}
-            <img src="{{site.baseurl}}/assets/img/{{post.teaser-image}}" />
+            {% if work.teaser-image %}
+            <img src="{{site.baseurl}}/assets/img/{{work.teaser-image}}" />
             {% endif %}
           </a>
         </li> 
       {% endfor %}
 
-      {% assign featuredPosts = site.posts | where:"featured", false %}
-      {% for post in featuredPosts %}
+      {% assign featuredWork = site.work | where:"featured", false | sort:"weight" %}
+      {% for work in featuredWork %}
         <li class="col-sm-12 col-md-6 col-lg-4">
-     			<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+     			<a class="post-link" href="{{ work.url | prepend: site.baseurl }}">
   	        
             <div class="project-content">
               <h2>
-    	          {{ post.title }}
+    	          {{ work.title }}
     	        </h2>
             </div>
 
-            {% if post.teaser-image %}
-          	<img src="{{site.baseurl}}/assets/img/{{post.teaser-image}}" />
+            {% if work.teaser-image %}
+          	<img src="{{site.baseurl}}/assets/img/{{work.teaser-image}}" />
             {% endif %}
         	</a>
         </li>
