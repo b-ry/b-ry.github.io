@@ -51,7 +51,7 @@
 		"../_sass/base/_typography.scss",
 		"../_sass/base/_icons.scss",
 		"../_sass/base/_utilities.scss",
-		"../_sass/base/bootstrap-grid.css",
+		"../_sass/base/_bootstrap-grid.scss",
 		"../_sass/layout/_layout.scss",
 		"../_sass/design/_design.scss",
 		"../_sass/design/global/_global.scss",
