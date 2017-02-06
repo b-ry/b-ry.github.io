@@ -5,18 +5,18 @@
     {% else %}
        <a class="site-logo" href="{{ site.baseurl }}/"><img src="/assets/img/theme/bu-logo-bw.svg"/></a>
     {% endif %}
+
     <nav class="site-nav clearfix">
-      <!-- {% include components/navbars/navbar.html %} -->
-      <!-- <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      <ul class="navigation">
+        {% for link in site.navigation %}
+          {% assign current = nil %}
+          {% if page.url == link.url %}
+            {% assign current = 'current' %}
           {% endif %}
+          <li class="{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+            <a class="hover-up {{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+          </li>
         {% endfor %}
-      </div> -->
-      <ul>
-        <li><a href="/#work">Work</a></li>
-        <li><a href="/#about">About</a></li>
       </ul>
     </nav>
   </div>

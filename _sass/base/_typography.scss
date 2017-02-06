@@ -3,16 +3,18 @@ a {
 	text-decoration: none;
 	transition-duration: .2s;
 	border-bottom: 1px solid $primary;
-	&:hover {
+	&:hover,
+	&:focus  {
 		color: $primary;
 		text-decoration: none;
 		border-bottom: 1px solid transparent;
+		outline: 0;
 	}
 }
 
 /* Slide right */
 
-p a,
+a.hover-up,
 .btn {
 	overflow: hidden;
 	font-weight: 700;
@@ -25,9 +27,10 @@ p a,
 	white-space: nowrap;
 	padding: 0 .2rem;
 	z-index: 1;
+	border-bottom: 1px solid $primary;
 }
 
-p a::before,
+a.hover-up::before,
 .btn::before {
 	position: absolute;
 	top: 0;
@@ -43,12 +46,22 @@ p a::before,
 	transform: translateY(95%);
 }
 
-p a:hover::before,
-p a:focus::before,
+a.hover-up:hover::before,
+a.hover-up:focus::before,
 .btn:hover::before,
 .btn:focus::before {
 	-webkit-transform: translateY(0);
 	transform: translateY(0);
+}
+
+.btn-lg {
+	display: inline-block;
+	padding: 1rem;
+	margin: 1.5rem 0 0;
+}
+
+a.no-border {
+	border: none;
 }
 
 h1, h2, h3, h4, h5 {
@@ -81,6 +94,10 @@ h6 {
 	font-weight: 700;
 }
 
+p {
+	margin-bottom: 3rem;
+}
+
 .page-title {
 	margin: 0 0 .5rem;
 	font-size: 4rem;
@@ -93,18 +110,15 @@ h6 {
 .section-title {
 	font-size: 8rem;
 	text-transform: uppercase;
-	margin: 5rem 0;
+	margin: 0;
 	text-align: center;
 	position: relative;
 	z-index: -1;
-	margin-bottom: -1.5rem;
 	@include media-breakpoint-up(sm) {
 		font-size: 15rem;
-		margin-bottom: -4.5rem;
 	}
 	@include media-breakpoint-up(md) {
 		font-size: 20rem;
-		margin-bottom: -4.5rem;
 	}
 }
 
@@ -136,5 +150,6 @@ ul, ol {
   li {
   	line-height: 1.25;
   	margin-bottom: 1rem;
+  	list-style-type: circle;
   }
 }

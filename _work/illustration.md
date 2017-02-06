@@ -1,12 +1,13 @@
 ---
 layout: project
-title: Illustration
+title: Illustrations
 featured: false
 weight: 5
 body-class: portfolio-node
-service: Illustration
+service: Illustration | Color Separations | Screen printing 
 teaser-image: projects/illustration/ill-teaser.jpg
 banner-image: projects/illustration/beat-the-heat.jpg
+intro: I also love drawing and screen printing. I created some illustrations for a newspaper ad and a t-shirt design that have nothing what so ever to do with UX or websites but hey! I think they turned out well so I thought I'd let you take a look. 
 ---
 
 <div class="row">
@@ -24,7 +25,7 @@ banner-image: projects/illustration/beat-the-heat.jpg
     <h2>b3 T-shirt illustration</h2>
 
     <p>The B3 was a non-profit venture to bring outdoor adventure and health awareness to Greeley, Colorado. The illustration was created as a unique image to be used on apparel.</p>
-    <p>Heavily influenced by Jay Ryan of The Bird Machine the process was completely done by hand, from the image creation to the hand cut rubylith used for color separations.</p>
+    <p>Heavily influenced by Jay Ryan of The Bird Machine. The process was completely done by hand, from the image creation to the hand cut rubylith used for color separations.</p>
    </div>
 
   <div class="col-sm-12 col-md-8">

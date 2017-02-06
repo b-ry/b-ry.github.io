@@ -10,6 +10,15 @@ keep_files: ['_site/css']
 
 github_username:  b-ry
 
+navigation: 
+- text: Work
+  url: /#work
+- text: About
+  url: /about
+# - text: Thoughts
+  # url: /thoughts
+
+
 collections:
   work:
     output: true

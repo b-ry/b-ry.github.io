@@ -5,8 +5,9 @@ featured: false
 weight: 2
 body-class: portfolio-node
 service: UX Design | UI Design | Prototyping | Front-end Development
-teaser-image: projects/jv/jv-teaser.jpg
+teaser-image: projects/jv/jv-teaser.png
 banner-image: projects/jv/jv-banner.jpg
+intro: I worked on user experience and content architecture for Jewish Voice's site redesign.
 ---
 
 Jewish Voice came to us needing to be able to manage their content. They had been using an in-house developer and custom building pages as they needed them. This process began to present issues so they wanted to get the site into a CMS. Additionally they wanted a redesign to freshen up their look and attract a younger audience while maintaining an interface that helped older users get to the content they desired. 

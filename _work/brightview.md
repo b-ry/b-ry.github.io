@@ -2,11 +2,12 @@
 layout: project
 title: Brightview
 featured: true
-weight: 3
+weight: -5
 body-class: portfolio-node
 service: UX Design | UI Design | Prototyping
-teaser-image: projects/brightview/brightview-teaser.jpg
+teaser-image: projects/brightview/brightview-teaser.png
 banner-image: projects/brightview/bv-banner.jpg
+intro: BrightView is a national landscape management company that I worked on while at NEWMEDIA. I created a complete set of interactive wire-frames that incorporated user flow as well as interactions.
 ---
 
 BrightView is a national landscape management company that needed to build a resident and infield worker portal to quickly and more accurately manage their properties. Their goal were to give access to residents in order to create tickets and to allow infield workers to create their own to-do's. This was all in an effort to keep better track of work and inform clients of work being done above and beyond.

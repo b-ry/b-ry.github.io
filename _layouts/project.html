@@ -8,11 +8,12 @@ layout: portfolio-default
 	  <h1 class="page-title">{{ page.title }}</h1>
     <a class="btn" href="/#work"><i class="icon icon-circle-left"></i>Back</a>
 	</div>
-{% if page.banner-image %}
+
+  {% if page.banner-image %}
   <header class="project-banner">
 	  <img class="" src="{{site.baseurl}}/assets/img/{{page.banner-image}}">
   </header>
-{% endif %}
+  {% endif %}
 
   <article class="project-content">
     {{ content }}

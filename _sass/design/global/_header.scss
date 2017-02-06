@@ -5,6 +5,7 @@
 	.home & {
 		position: absolute;
 	}
+
 }
 
 .site-logo {
@@ -26,14 +27,26 @@
 
 .site-nav ul {
 	list-style-type: none;
+	font-size: 2rem;
 }
 
 .site-nav li {
-	display: inline;
-	margin: 0 .5rem;
+	display: block;
+	text-align: right;
+	@include media-breakpoint-up(sm) {
+		display: inline;
+		margin: 0 .5rem;
+	}
 }
 
 .site-nav li a {
-	color: #ffffff;
+	color: tint($gray-one, 50%);
 	border-bottom: none;
+	font-size: 2rem;
+	@include media-breakpoint-up(lg) {
+		color: #ffffff;
+	}
+	.home & {
+		color: #fff;
+	}
 }
