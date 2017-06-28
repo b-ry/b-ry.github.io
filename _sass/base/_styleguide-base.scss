@@ -27,11 +27,9 @@ $brand-warning:             #f0ad4e !default;
 $brand-danger:              #d9534f !default;
 
 $primary:                   #ff6f00;
-$primary-mid:               #ff8f00;
-$primary-lt:                #ffa000;
-
-$secondary:                 #00bfa5;
-$purple:                    #5f0441;
+$secondary:                 #55BABA;
+$purple:                    #5e4569;
+$teal:                      #55BABA;
 
 // Options
 //
@@ -43,7 +41,7 @@ $enable-shadows:            false !default;
 $enable-gradients:          false !default;
 $enable-transitions:        false !default;
 $enable-hover-media-query:  false !default;
-$enable-grid-classes:       false !default;
+$enable-grid-classes:       true !default;
 
 
 // Spacing
