@@ -7,12 +7,17 @@
 @import "../../bower_components/bootstrap/scss/grid";
 
 
-.body-content,
+.information,
 .project-header {
-  width: 80%;
-  margin: 0 auto;
+	margin: 0 1rem;
+	@include media-breakpoint-up(md){
+	  width: 80%;
+	  margin: 0 auto;
+	}
 }
 
 .two-column {
-	column-count: 2;
+	@include media-breakpoint-up(md){
+		column-count: 2;
+	}
 }

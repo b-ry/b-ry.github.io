@@ -23,13 +23,21 @@
 	}
 }
 
-.portfolio .post-list article a {
+.portfolio .post-list a {
   list-style-type: none;
   line-height: $line-height;
   margin: 0;
   display: block;  
   position: relative;
   margin: .5rem;
+  overflow: hidden;
+}
+
+.portfolio .post-list a img {
+  transition-duration: .4s;
+}
+.portfolio .post-list a:hover img {
+  transform: scale(1.2) rotate(7deg);
 }
 
 .portfolio article .title {
@@ -96,9 +104,6 @@
 
 .portfolio img {
 	width: 100%;
-	@include media-breakpoint-up(lg) {
-		// width: auto;
-	}
 }
 
 .portfolio .project-content {
@@ -122,6 +127,3 @@
 	}
 }
 
-.portfolio .featured .project-content h2 {
-
-}

@@ -52,6 +52,16 @@ ul.menu-items li {
 	    &:nth-child(2) {
 	    	transition-delay: .3s;
 	    }
+	    &:nth-child(3) {
+	    	transition-delay: .4s;
+	    }
+	}
+	&.menu-home {
+		a {
+			width: 4rem;
+			height: 5.5rem;
+			display: block;
+		}
 	}
 }
 

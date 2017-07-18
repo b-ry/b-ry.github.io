@@ -12,7 +12,7 @@ body {
   	overflow: hidden;
   }
   &.front {
-  	background: $purple;
+  	@include gradient-purple;
   }
 }
 
