@@ -1,26 +1,28 @@
-
 .portfolio {
-  background: #fff;
-  padding: .5rem;
+  padding: 0 1rem;
+  @include media-breakpoint-up(lg) {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
-.portfolio .post-list {
+.portfolio ul.post-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
-.portfolio .post-list.row-1,
-.portfolio .post-list.row-2 {
-	@include media-breakpoint-up(md) {
-		display: flex;
-	}
-}
-
-.portfolio .post-list.row-2 article {
-	@include media-breakpoint-up(md) {
-	  width: 50%;
-	}
+.portfolio ul.post-list li {
+  @include media-breakpoint-up(md) {
+    width: calc(33.33% - 2rem);
+    margin: 1rem;
+  }
 }
 
 .portfolio .post-list a {
@@ -29,7 +31,6 @@
   margin: 0;
   display: block;  
   position: relative;
-  margin: .5rem;
   overflow: hidden;
 }
 
@@ -40,7 +41,7 @@
   transform: scale(1.2) rotate(7deg);
 }
 
-.portfolio article .title {
+.portfolio .title {
   position: absolute;
   top: 0;
   right: 0;
@@ -51,14 +52,14 @@
   background: rgba($teal, 0);
 }
 
-.portfolio article a:hover .title {
+.portfolio a:hover .title {
   background: rgba($teal, 0.75);
   z-index: 999;
   transition-duration: .5s;
   visibility: visible;
 }
 
-.portfolio article .title h1{
+.portfolio .title h1{
   color: rgba(255,255,255,1);
   font-weight: 700;
   font-size: 3rem;
@@ -68,7 +69,7 @@
   margin: 0;
 }
 
-.portfolio article .title .underline {
+.portfolio .title .underline {
 	height: 2px;
     background: #fff;
     width: 0;
@@ -81,7 +82,7 @@
     transform: translateY(24px);
 }
 
-.portfolio article a:hover .underline {
+.portfolio a:hover .underline {
 	transition-delay: .2s;
 	transition-duration: .4s;
 	width: 100px;

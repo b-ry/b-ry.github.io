@@ -4,6 +4,7 @@ title: Brightview
 featured: true
 weight: -5
 body-class: portfolio-node
+category: Web
 service: UX Design, UI Design, Prototyping
 teaser-image: projects/brightview/brightview-teaser.png
 banner-image: projects/brightview/bv-banner.jpg

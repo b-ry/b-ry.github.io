@@ -21,6 +21,7 @@ navigation:
 
 
 collections:
+
   work:
     output: true
     permalink: /work/:name

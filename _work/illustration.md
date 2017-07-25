@@ -4,6 +4,7 @@ title: Illustrations
 featured: false
 weight: 5
 body-class: portfolio-node
+category: Illustration
 service: Illustration, Color Separations, Screen printing 
 teaser-image: projects/illustration/ill-teaser.jpg
 banner-image: projects/illustration/beat-the-heat.jpg

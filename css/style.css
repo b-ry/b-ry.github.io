@@ -2634,26 +2634,35 @@ body.front {
 }
 
 .portfolio {
-  background: #fff;
-  padding: .5rem;
+  padding: 0 1rem;
 }
 
-.portfolio .post-list {
+@media (min-width: 992px) {
+  .portfolio {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.portfolio ul.post-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 768px) {
-  .portfolio .post-list.row-1,
-  .portfolio .post-list.row-2 {
-    display: flex;
+  .portfolio ul.post-list {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
 @media (min-width: 768px) {
-  .portfolio .post-list.row-2 article {
-    width: 50%;
+  .portfolio ul.post-list li {
+    width: calc(33.33% - 2rem);
+    margin: 1rem;
   }
 }
 
@@ -2663,7 +2672,6 @@ body.front {
   margin: 0;
   display: block;
   position: relative;
-  margin: .5rem;
   overflow: hidden;
 }
 
@@ -2675,7 +2683,7 @@ body.front {
   transform: scale(1.2) rotate(7deg);
 }
 
-.portfolio article .title {
+.portfolio .title {
   position: absolute;
   top: 0;
   right: 0;
@@ -2686,14 +2694,14 @@ body.front {
   background: rgba(85, 186, 186, 0);
 }
 
-.portfolio article a:hover .title {
+.portfolio a:hover .title {
   background: rgba(85, 186, 186, 0.75);
   z-index: 999;
   transition-duration: .5s;
   visibility: visible;
 }
 
-.portfolio article .title h1 {
+.portfolio .title h1 {
   color: white;
   font-weight: 700;
   font-size: 3rem;
@@ -2703,7 +2711,7 @@ body.front {
   margin: 0;
 }
 
-.portfolio article .title .underline {
+.portfolio .title .underline {
   height: 2px;
   background: #fff;
   width: 0;
@@ -2716,7 +2724,7 @@ body.front {
   transform: translateY(24px);
 }
 
-.portfolio article a:hover .underline {
+.portfolio a:hover .underline {
   transition-delay: .2s;
   transition-duration: .4s;
   width: 100px;
@@ -3140,6 +3148,35 @@ h2.resume-section {
   /* Firefox 16+, IE 10+, Opera */
   -webkit-transition: all 0.3s 1s ease-out;
   transition: all 0.3s 1s ease-out;
+}
+
+ul.work-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  ul.work-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+ul.work-list li {
+  list-style-type: none;
+}
+
+@media (min-width: 768px) {
+  ul.work-list li {
+    width: calc(25% - 2rem);
+    margin: 2rem 1rem;
+  }
+}
+
+footer {
+  height: 8rem;
 }
 
 /*# sourceMappingURL=style.css.map */

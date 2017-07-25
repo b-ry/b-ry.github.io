@@ -4,6 +4,7 @@ title: History Colorado
 featured: false 
 weight: 4
 body-class: portfolio-node
+category: Visual Concept
 service: Design, HTML, CSS, Prototyping
 teaser-image: projects/histco/histco-teaser.png
 banner-image: projects/histco/histco-banner.jpg
