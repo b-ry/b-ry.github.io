@@ -1,6 +1,7 @@
 nav.menu {
 	position: fixed;
 	top: 0;
+  right: 0;
 	width: 100%;
 	height: 100%;
 	margin-left: -1.5rem;
@@ -9,6 +10,8 @@ nav.menu {
 	.menu-active & {
 	  background: rgba($gray-one, .7);
 	  visibility: visible;
+    left: 0;
+    margin-left: 0;
 	}
 }
 
@@ -127,7 +130,7 @@ ul.menu-items li a {
 	}
 }
 
-.socialmedia-menu i {	
+.socialmedia-menu i {
 	margin: 0 1rem 0 0 ;
 }
 
