@@ -1,21 +1,91 @@
 .portfolio {
-	margin: 15rem 0 0;
+  padding: 0 1rem;
+  @include media-breakpoint-up(lg) {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .portfolio ul.post-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .portfolio ul.post-list li {
-  list-style-type: none;
-  padding: 4rem 0;
-  line-height: $line-height;
-  border-bottom: 1px solid tint($gray-one, 80%);
-  &:last-of-type {
-  	border-bottom: none;
+  @include media-breakpoint-up(md) {
+    width: calc(33.33% - 2rem);
+    margin: 1rem;
   }
+}
+
+.portfolio .post-list a {
+  list-style-type: none;
+  line-height: $line-height;
+  margin: 0;
+  display: block;  
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio .post-list a img {
+  transition-duration: .4s;
+}
+.portfolio .post-list a:hover img {
+  transform: scale(1.2) rotate(7deg);
+}
+
+.portfolio .title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  text-align: center;
+  background: rgba($teal, 0);
+}
+
+.portfolio a:hover .title {
+  background: rgba($teal, 0.75);
+  z-index: 999;
+  transition-duration: .5s;
+  visibility: visible;
+}
+
+.portfolio .title h1{
+  color: rgba(255,255,255,1);
+  font-weight: 700;
+  font-size: 3rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+}
+
+.portfolio .title .underline {
+	height: 2px;
+    background: #fff;
+    width: 0;
+    top: 50%;
+    position: absolute;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    transform: translateY(24px);
+}
+
+.portfolio a:hover .underline {
+	transition-delay: .2s;
+	transition-duration: .4s;
+	width: 100px;
 }
 
 .portfolio .project-teaser {
@@ -26,14 +96,15 @@
 }
 
 .portfolio .project-teaser a {
-	padding: 0;
+	padding: 10rem;
+	height: 60rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.portfolio .project-teaser img {
+.portfolio img {
 	width: 100%;
-	@include media-breakpoint-up(lg) {
-		width: auto;
-	}
 }
 
 .portfolio .project-content {
@@ -57,6 +128,3 @@
 	}
 }
 
-.portfolio .featured .project-content h2 {
-
-}

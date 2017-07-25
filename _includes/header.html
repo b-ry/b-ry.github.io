@@ -1,25 +1,42 @@
-<header class="site-header clearfix">
-  <div class="wrapper">
-    {% if page.url == "/" %}
-       <a class="site-logo" href="{{ site.baseurl }}/"><img src="/assets/img/theme/bu-logo.svg"/></a>
-    {% else %}
-       <a class="site-logo" href="{{ site.baseurl }}/"><img src="/assets/img/theme/bu-logo-bw.svg"/></a>
-    {% endif %}
-
-    <nav class="site-nav clearfix">
-      <ul class="navigation">
-        {% for link in site.navigation %}
-          {% assign current = nil %}
-          {% if page.url == link.url %}
-            {% assign current = 'current' %}
-          {% endif %}
-          <li class="{% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
-            <a class="hover-up {{ current }}" href="{{ link.url }}">{{ link.text }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </nav>
+<header class="header clearfix">
+    
+  {% if page.url == "/" %}
+     <a class="site-logo" href="{{ site.baseurl }}/"><img src="/assets/img/theme/bu-logo.svg"/></a>
+  {% else %}
+     <a class="site-logo" href="{{ site.baseurl }}/"><img src="/assets/img/theme/bu-logo-bw.svg"/></a>
+  {% endif %}
+  
+  <div class="hamburger">
+    <span class="hamburger-patty"></span>
+    <span class="hamburger-patty"></span>
+    <span class="hamburger-patty"></span>
   </div>
+
+  <nav class="menu">
+    <div class="menu-list">
+
+      <ul class="menu-items">
+        <li class="menu-item menu-home"><a {% if page.url == '/' %}class="active"{% endif %} href="/"><img src="/assets/img/theme/bu-logo.svg"/></a></li>
+        <li class="menu-item"><a {% if page.url == '/work.html' %}class="active"{% endif %} href="/work">Work</a></li>
+        <li class="menu-item"><a {% if page.url == '/about.html' %}class="active"{% endif %} href="/about">About</a></li>
+      </ul>
+
+      <ul class="socialmedia-menu">
+          
+        <li>
+         <a href="https://github.com/b-ry" target="_blank"><i class="icon icon-github"></i><span>Github</span></a>
+        </li> 
+        <li>
+          <a href="https://www.linkedin.com/in/bryon-urbanec-27bb423a?trk=nav_responsive_tab_profile" target="_blank"><i class="icon icon-linkedin"></i><span>LinkedIn</span></a>
+        </li>
+       
+      </ul>
+
+    </div>
+  </nav>
+
+  
+
 </header>
 
 

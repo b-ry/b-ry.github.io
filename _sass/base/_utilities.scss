@@ -25,10 +25,6 @@
 .row.img-section {
   margin-right: auto;
   width: 100%;
-  @include media-breakpoint-up(lg) {
-    margin-right: -20rem;
-    width: auto;
-  }
 }
 
 .btn {

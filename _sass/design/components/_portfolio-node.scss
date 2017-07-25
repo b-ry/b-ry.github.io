@@ -8,14 +8,6 @@
 		margin-right: auto;
 		width: 100%;
 	}
-	@include media-breakpoint-up(lg) {
-		margin-right: -20rem;
-		width: auto;
-	}
-	@include media-breakpoint-up(xl) {
-		margin-right: -40rem;
-		width: auto;
-	}
 }
 
 .portfolio-node .project-banner img {
@@ -25,4 +17,13 @@
 		margin-right: auto;
 		box-shadow: 3rem 3rem #fff, 3rem -3rem #fff;
 	}
+}
+
+.service {
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: $teal;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-top: .5rem;
 }

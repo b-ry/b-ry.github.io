@@ -12,3 +12,17 @@ $(function() {
     }
   });
 });
+
+$(document).ready(function() {
+  $('.hamburger').click( function() {
+      $("body").toggleClass("menu-active");
+  } )
+});
+
+$(document).ready(function() {
+  
+  setTimeout(function(){
+    $('body').addClass('loaded');
+  }, 1500);
+  
+});

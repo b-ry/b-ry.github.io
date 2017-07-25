@@ -11,7 +11,7 @@
 }
 
 .resume .section-two.border {
-  border-left-color: $primary-lt;
+  border-left-color: $primary;
 }
 
 .resume .degree.border {
@@ -44,7 +44,7 @@
 }
 
 .section-two h2 {
-	color: $primary-lt;
+	color: $primary;
 }
 
 .education h3 {
@@ -62,9 +62,6 @@
 
 h2.resume-section {
 	margin-bottom: 2rem;
-	@include media-breakpoint-up(md) {
-		margin-left: 10rem;
-	}
 }
 
 .print-version {
@@ -91,9 +88,9 @@ h2.resume-section {
 		}
 	}
 	&.primary-lt {
-		background: $primary-lt;
+		background: $primary;
 		&:after {
-			border-left-color: $primary-lt;
+			border-left-color: $primary;
 		}
 	}
 	&.secondary {
