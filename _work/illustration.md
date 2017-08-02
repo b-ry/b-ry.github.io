@@ -2,13 +2,13 @@
 layout: project
 title: Illustrations
 featured: false
-weight: 5
+weight: 3
 body-class: portfolio-node
 category: Illustration
-service: Illustration, Color Separations, Screen printing 
+service: Illustration, Color Separations, Screen printing
 teaser-image: projects/illustration/ill-teaser.jpg
 banner-image: projects/illustration/beat-the-heat.jpg
-intro: I also love drawing and screen printing. I created some illustrations for a newspaper ad and a t-shirt design that have nothing what so ever to do with UX or websites but hey! I think they turned out well so I thought I'd let you take a look. 
+intro: I also love drawing and screen printing. I created some illustrations for a newspaper ad and a t-shirt design that have nothing what so ever to do with UX or websites but hey! I think they turned out well so I thought I'd let you take a look.
 ---
 
 <div class="container">

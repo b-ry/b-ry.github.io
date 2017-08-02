@@ -2,7 +2,7 @@
 layout: project
 title: Brightview
 featured: true
-weight: -5
+weight: 1
 body-class: portfolio-node
 category: Web
 service: UX Design, UI Design, Prototyping
@@ -16,12 +16,19 @@ intro: BrightView is a national landscape management company that I worked on wh
 		<p>For this project we created a static site for both wire frames and design. It helped to communicate functionality of elements as well as what the layout would look like at the various breakpoints.</p>
 		<p>You can still view the prototype <a href="http://newmediadenver.github.io/bv">here</a></p>
 	</div>
-	<h2>Ticket Creation</h2>
-	<figure>
-		<img src="/assets/img/projects/brightview/bv-ticket.jpg" />
-	</figure>
-	<h3>Admin Ticket Filter</h3>
-	<figure>
-		<img src="/assets/img/projects/brightview/admin-dashboard-mobile.jpg" />
-	</figure>
 </section>
+<div>
+	<figure>
+		<img src="/assets/img/projects/brightview/bv-comp-wire.png" />
+	</figure>
+</div>
+<div class="col-md-10 col-md-offset-1">
+	<h3>Live Wireframes</h3>
+	<figure>
+		<img src="/assets/img/projects/brightview/bv-wires.png" />
+	</figure>
+	<h3>Results</h3>
+	<figure>
+		<img src="/assets/img/projects/brightview/bv-result.png" />
+	</figure>
+</div>

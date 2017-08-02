@@ -6,6 +6,7 @@
   }
 }
 
+ul.work-list,
 .portfolio ul.post-list {
   margin: 0;
   padding: 0;
@@ -18,75 +19,60 @@
   }
 }
 
+ul.work-list li,
 .portfolio ul.post-list li {
+  list-style-type: none;
   @include media-breakpoint-up(md) {
     width: calc(33.33% - 2rem);
     margin: 1rem;
   }
 }
 
+ul.work-list a,
 .portfolio .post-list a {
   list-style-type: none;
   line-height: $line-height;
   margin: 0;
-  display: block;  
+  display: block;
   position: relative;
   overflow: hidden;
 }
 
+ul.work-list a img,
 .portfolio .post-list a img {
   transition-duration: .4s;
 }
+
+ul.work-list a:hover img,
 .portfolio .post-list a:hover img {
   transform: scale(1.2) rotate(7deg);
 }
 
+ul.work-list .title,
 .portfolio .title {
   position: absolute;
-  top: 0;
-  right: 0;
   bottom: 0;
-  left: 0;
-  visibility: hidden;
-  text-align: center;
-  background: rgba($teal, 0);
+  padding: 1rem 3rem;
+  background: rgba($teal, 0.8);
+  width: 100%;
 }
 
-.portfolio a:hover .title {
-  background: rgba($teal, 0.75);
-  z-index: 999;
-  transition-duration: .5s;
-  visibility: visible;
-}
-
-.portfolio .title h1{
-  color: rgba(255,255,255,1);
+ul.work-list .title h3,
+.portfolio .title h1 {
+  color: #fff;
   font-weight: 700;
-  font-size: 3rem;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  font-size: 2rem;
+  text-transform: uppercase;
   margin: 0;
 }
 
-.portfolio .title .underline {
-	height: 2px;
-    background: #fff;
-    width: 0;
-    top: 50%;
-    position: absolute;
-    margin-left: auto;
-    left: 0;
-    right: 0;
-    margin-right: auto;
-    transform: translateY(24px);
+ul.work-list .title .category,
+.portfolio .title .category {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: $purple;
 }
 
-.portfolio a:hover .underline {
-	transition-delay: .2s;
-	transition-duration: .4s;
-	width: 100px;
-}
 
 .portfolio .project-teaser {
 	@include media-breakpoint-up(lg) {
@@ -103,15 +89,15 @@
 	align-items: center;
 }
 
-.portfolio img {
-	width: 100%;
-}
+// .portfolio img {
+// 	width: 100%;
+// }
 
-.portfolio .project-content {
-	@include media-breakpoint-up(lg) {
-	  margin-left: 2rem;
-	}
-}
+// .portfolio .project-content {
+// 	@include media-breakpoint-up(lg) {
+// 	  margin-left: 2rem;
+// 	}
+// }
 
 .portfolio .project-content h2 {
 	font-size: 4rem;
@@ -127,4 +113,3 @@
 		}
 	}
 }
-
