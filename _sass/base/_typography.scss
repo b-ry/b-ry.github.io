@@ -102,6 +102,7 @@ p {
 	margin: 0 0 .5rem;
 	font-size: 4rem;
 	line-height: 1;
+  text-transform: uppercase;
 	@include media-breakpoint-up (md) {
 		font-size: 6.5rem;
 	}

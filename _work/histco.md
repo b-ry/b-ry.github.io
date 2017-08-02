@@ -1,8 +1,8 @@
 ---
 layout: project
 title: History Colorado
-featured: false 
-weight: 4
+featured: false
+weight: 2
 body-class: portfolio-node
 category: Visual Concept
 service: Design, HTML, CSS, Prototyping
@@ -13,11 +13,10 @@ intro: History Colorado was looking to build a new site but first needed buy-in 
 <section class="information">
 	<div class="two-column">
 		<p>History Colorado came to us to completely re-architect their site. It was going to be an extensive overhaul. It needed to be functional for users highlighting all of the museums in the network as well as provide researchers the access they required. A complete HTML wire-frame prototype was created for a first phase.</p>
-		<h2>Design</h2> 
 		<p>Design was not heavily considered during our time working with History Colorado. We created an initial design concept to give some idea of what may happen in the design phase. Below is a design direction that was not chosen.</p>
 	</div>
 
-<figure class="row img-section">
+<figure class="img-section">
 	<img src="/assets/img/projects/histco/histco.jpg" alt="">
 </figure>
 

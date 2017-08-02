@@ -1102,6 +1102,7 @@ p {
   margin: 0 0 .5rem;
   font-size: 4rem;
   line-height: 1;
+  text-transform: uppercase;
 }
 
 @media (min-width: 768px) {

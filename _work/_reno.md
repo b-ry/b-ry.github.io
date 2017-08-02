@@ -2,7 +2,7 @@
 layout: project
 title: RenoSystemPro
 featured: false
-weight: 3
+weight:
 body-class: portfolio-node
 service: Design, Drupal, Site-build, HTML, CSS
 teaser-image: projects/reno/reno-teaser.png
@@ -21,7 +21,7 @@ intro: I worked on responsive design and user experience of RenoSystemPro's new 
 <div class="row justify-content-center img-section">
 
 	<div class="col-xs-12 col-sm-8 col-md-4">
-		<img src="/assets/img/projects/reno/reno-home-mobile.png" /> 
+		<img src="/assets/img/projects/reno/reno-home-mobile.png" />
 	</div>
 	<div class="col-md-8">
 		<img src="/assets/img/projects/reno/reno-home-full.png" />
@@ -32,7 +32,7 @@ intro: I worked on responsive design and user experience of RenoSystemPro's new 
 <div class="row img-section">
 
 	<div class="col-md-4">
-		<img src="/assets/img/projects/reno/reno-mobile-landing.png" /> 
+		<img src="/assets/img/projects/reno/reno-mobile-landing.png" />
 	</div>
 	<div class="col-md-8">
 		<img src="/assets/img/projects/reno/reno-interior.jpg" />

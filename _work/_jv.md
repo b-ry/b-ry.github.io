@@ -2,9 +2,9 @@
 layout: project
 title: Jewish Voice
 featured: false
-weight: 2
+weight:
 body-class: portfolio-node
-category: 
+category:
 service: UX Design, UI Design, Prototyping, Front-end Development
 teaser-image: projects/jv/jv-teaser.png
 banner-image: projects/jv/jv-banner.jpg

@@ -3,7 +3,6 @@
 }
 
 .portfolio-node .project-banner {
-	
 	@include media-breakpoint-up(md) {
 		margin-right: auto;
 		width: 100%;
@@ -22,8 +21,7 @@
 .service {
 	font-size: 1.8rem;
 	font-weight: 700;
-	color: $teal;
-	text-transform: uppercase;
+	color: $purple;
 	letter-spacing: 1px;
 	margin-top: .5rem;
 }
