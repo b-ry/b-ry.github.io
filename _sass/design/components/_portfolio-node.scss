@@ -3,6 +3,7 @@
 }
 
 .portfolio-node .project-banner {
+	margin-bottom: 4rem;
 	@include media-breakpoint-up(md) {
 		margin-right: auto;
 		width: 100%;
@@ -10,15 +11,15 @@
 }
 
 .portfolio-node .project-banner img {
-	margin-bottom: 4rem;
 	width: 100%;
+	box-shadow: 0 1rem 1rem rgba(0,0,0,0.05);
 	@include media-breakpoint-up(lg) {
 		margin-right: auto;
-		box-shadow: 3rem 3rem #fff, 3rem -3rem #fff;
 	}
 }
 
 .service {
+	font-family: $font-family-sans-serif;
 	font-size: 1.8rem;
 	font-weight: 700;
 	color: $purple;

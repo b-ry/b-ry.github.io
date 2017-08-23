@@ -8,6 +8,8 @@ body {
   min-height: 100vh;
   flex-direction: column;
   font-weight: 300;
+  background: url(../assets/img/theme/groovepaper.png) repeat;
+  background-attachment: fixed;
   &.menu-active {
   	overflow: hidden;
   }

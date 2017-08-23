@@ -1,3 +1,7 @@
+body {
+  font-family: $font-family-serif;
+}
+
 a {
 	color: $purple;
 	text-decoration: none;
@@ -28,6 +32,7 @@ a.hover-up,
 	padding: 0 .2rem;
 	z-index: 1;
 	border-bottom: 1px solid $purple;
+  font-family: $font-family-sans-serif;
 }
 
 a.hover-up::before,
@@ -67,11 +72,12 @@ a.no-border {
 h1, h2, h3, h4, h5 {
   color: $gray-one;
   margin-top: 3rem;
+  font-family: $font-family-sans-serif;
 }
 
 h1 {
 	font-size: $font-size-h1;
-	font-weight: 700;
+	font-weight: 900;
 }
 h2 {
 	font-size: $font-size-h2;

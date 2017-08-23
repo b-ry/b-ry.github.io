@@ -14,7 +14,7 @@ intro: BrightView is a national landscape management company that I worked on wh
 	<div class="two-column">
 		<p>BrightView is a national landscape management company that needed to build a resident and infield worker portal to quickly and more accurately manage their properties. Their goal were to give access to residents in order to create tickets and to allow infield workers to create their own to-do's. This was all in an effort to keep better track of work and inform clients of work being done above and beyond.</p>
 		<p>For this project we created a static site for both wire frames and design. It helped to communicate functionality of elements as well as what the layout would look like at the various breakpoints.</p>
-		<p>You can still view the prototype <a href="http://newmediadenver.github.io/bv">here</a></p>
+		<p>You can still view the prototype <a class="hover-up" href="http://newmediadenver.github.io/bv">here</a></p>
 	</div>
 </section>
 <div>
