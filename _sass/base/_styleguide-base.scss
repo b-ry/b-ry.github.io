@@ -108,12 +108,14 @@ $grid-gutter-width:          1.875rem !default; // 30px
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
 @import url('https://fonts.googleapis.com/css?family=Overpass:300,400,900');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i|Nunito+Sans:400,700,900');
 
 // font-family: 'Give You Glory', cursive;
 // font-family: 'Waiting for the Sunrise', cursive;
 
-$font-family-sans-serif:     'Overpass', Helvetica, Arial, sans-serif !default;
-$font-family-serif:          Georgia, "Times New Roman", Times, serif !default;
+$font-family-sans-serif:     'Nunito Sans', Helvetica, Arial, sans-serif !default;
+$font-family-serif:          'Lora', "Times New Roman", Times, serif !default;
 $font-family-monospace:      Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:           $font-family-sans-serif !default;
 
