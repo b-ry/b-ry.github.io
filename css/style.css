@@ -6598,6 +6598,12 @@ body.front {
   margin-top: 1rem;
 }
 
+@media (min-width: 768px) {
+  .intro .categories {
+    font-size: 2.2rem;
+  }
+}
+
 .img-overlay img {
   position: absolute;
   height: 100%;
