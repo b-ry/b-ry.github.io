@@ -7,7 +7,7 @@
 }
 
 .site-logo {
-	width: 4.5rem;
+	width: 6.5rem;
 	display: block;
 	border-bottom: 1px solid transparent;
 }
@@ -18,6 +18,8 @@
 	padding: .5rem 1rem;
 	margin-left: auto;
 	z-index: 999;
+	height: 4.5rem;
+	margin-top: 1rem;
 	&:hover {
 		.hamburger-patty {
 			width: 2.5rem;
