@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body class="{{ page.body-class }}">
+  <body class="{{ page.body-class }} {{ layout.body-class }}">
     <div id="loader-wrapper">
       <div id="loader"></div>
 
@@ -15,11 +15,7 @@
     {% include header.html %}
 
     <div id="main" class="">
-      <div class="row">
-        <div class="col col-md-12 col-lg-8">
-          {{ content }}
-        </div>
-      </div>
+      {{ content }}
     </div>
 
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"   integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="   crossorigin="anonymous"></script>
