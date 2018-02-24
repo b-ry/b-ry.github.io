@@ -1,0 +1,8 @@
+.date {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  // font-weight: 700;
+  font-family: $font-mono;
+  letter-spacing: 3px;
+  color: tint($black, 50%);
+}

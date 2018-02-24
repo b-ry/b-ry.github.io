@@ -1,22 +1,28 @@
 ---
-layout: portfolio-default
+layout: default
+body-class: project
 ---
-<div class="project">
 
   {% if page.banner-image %}
-  <header class="project-banner">
+  <figure class="full-width">
 	  <img class="" src="{{site.baseurl}}/assets/img/{{page.banner-image}}">
-  </header>
+  </figure>
   {% endif %}
 
-  <div class="project-header">
-    <div class="service">{{ page.service }}</div>
-    <h1 class="page-title">{{ page.title }}</h1>
-    <!-- <a class="btn" href="/#work"><i class="icon icon-circle-left"></i>Back</a> -->
+  <div class="project-header clearfix">
+    <div class="projectTitleWrapper">
+      <h1 class="page-title">{{ page.title }}</h1>
+      <div class="service-list">
+        {{ page.service }}
+        {% if page.external-link %}
+        <a class="" href="{{ page.external-link }}" target="_blank">Live Site</a>
+        {% endif %}
+      </div>
+    </div>
+    <div class="project-intro">
+      <p>{{ page.intro  }}</p>
+    </div>
   </div>
-
-  <article class="project-content">
+  <article class="project-content clearfix">
     {{ content }}
   </article>
-
-</div>

@@ -1,0 +1,35 @@
+.about-section {
+  border-bottom: 1px solid tint($black, 90%);
+  padding: 4rem 2rem;
+  @include for-tablet-landscape-up {
+    padding: 6rem 4rem;
+  }
+  @include for-desktop-up {
+    padding: 8rem;
+  }
+}
+
+.aboutTitleWrap {
+  @include for-tablet-landscape-up {
+    width: 30rem;
+    float: left;
+  }
+  @include for-desktop-up {
+    width: 50rem;
+    float: left;
+  }
+}
+
+.aboutTitle {
+  margin-right: 4rem;
+}
+
+.aboutContentWrap {
+  overflow: hidden;
+}
+
+.degree.border {
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid $black;
+}

@@ -1,0 +1,16 @@
+header h1 {
+  margin: 0;
+  &:after {
+    display: none;
+  }
+}
+
+header h1 a {
+  width: 6.4rem;
+  height: 6.4rem;
+  display: block;
+}
+
+header a span.hide-text {
+  display: none;
+}

@@ -1,0 +1,38 @@
+.hamburger {
+  margin-left: auto;
+  z-index: 999;
+}
+
+.hamburger-patty {
+  height: .2rem;
+  width: 2.5rem;
+  background: $black;
+  display: block;
+  margin: .3rem 0;
+  transition: .25s ease-in-out;
+  .menu-active & {
+    background: #fff;
+  }
+  .menu-active & {
+    &:nth-of-type(1) {
+      transform: rotate(45deg) translate(8px, 6px);
+      // width: 2.5rem;
+    }
+  }
+  .menu-active & {
+    &:nth-of-type(2) {
+      opacity: 0;
+    }
+  }
+  .menu-active & {
+    &:nth-of-type(3) {
+      transform: rotate(-45deg) translate(7px,-5px);
+      // width: 2.5rem;
+    }
+  }
+}
+
+.hamburger:hover .hamburger-patty,
+.menu-active .hamburger-patty {
+  margin: .7rem 0;
+}

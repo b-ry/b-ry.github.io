@@ -1,0 +1,24 @@
+<section class="projects clearfix">
+  <ul class="project-list">
+    {% assign featuredWork = site.work | sort:"weight" %}
+    {% for work in featuredWork %}
+		  {% if work.teaser-image %}
+      <li class="project-{% increment %}">
+        <a class="no-border project-card" href="{{ work.url | prepend: site.baseurl }}">
+          <div class="projectAssetWrapper">
+            <img src="{{site.baseurl}}/assets/img/{{work.teaser-image}}" />
+          </div>
+          <div class="projectTitleWrapper">
+            <div class="category">
+              {{ work.category }}
+            </div>
+            <h2>
+              {{ work.title }}
+            </h2>
+          </div>
+        </a>
+      </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</section>

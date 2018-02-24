@@ -1,0 +1,18 @@
+---
+layout: default
+body-class: journal
+---
+
+<h1>Journal</h1>
+<ul class="post-list">
+{% for post in site.posts %}
+  <li class="post">
+    <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
+    <h2>
+      <a class="hover-up post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h2>
+    {{ post.excerpt }}
+    <a class="read-more" href="{{ post.url || prepend: site.baseurl }}">Read More</a>
+  </li>
+{% endfor %}
+</ul>

@@ -1,0 +1,27 @@
+.project-card {
+  height: 30rem;
+  @include for-tablet-portrait-up {
+    height: 40rem;
+  }
+  @include for-tablet-landscape-up {
+    height: 30rem;
+  }
+  @include for-desktop-up {
+    height: 40rem;
+  }
+}
+
+.project-card .category {
+  margin-top: 3rem;
+  font-family: $font-mono;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  transition: all 2s cubic-bezier(.23,1,.32,1);
+  color: tint($black, 70%);
+}
+
+.project-card:hover .category {
+  margin-top: 4.5rem;
+  color: tint($black, 30%);
+}
