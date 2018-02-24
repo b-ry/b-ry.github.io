@@ -1,0 +1,22 @@
+body.menu-active {
+  overflow: hidden;
+}
+
+#main {
+  width: 100%;
+  padding: 0 1rem;
+  margin: 4rem auto;
+  @include for-tablet-portrait-up {
+    width: 58rem;
+    margin: 7rem auto;
+    padding: 0;
+  }
+  @include for-tablet-landscape-up {
+    width: 88rem;
+  }
+  @include for-desktop-up {
+    width: 118rem;
+  }
+}
+
+

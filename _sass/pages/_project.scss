@@ -1,0 +1,25 @@
+.project .project-header {
+  @include for-tablet-landscape-up {
+    display: flex;
+  }
+}
+
+.project .projectTitleWrapper {
+  @include for-tablet-landscape-up {
+    width: 50%;
+    padding: 0 4rem 3rem 0;
+  }
+}
+
+.project .projectTitleWrapper h1 {
+  margin-bottom: 1rem;
+}
+
+.project .project-intro {
+  font-size: 2.8rem;
+  color: $black;
+  @include for-tablet-landscape-up {
+    overflow: hidden;
+    width: 50%;
+  }
+}

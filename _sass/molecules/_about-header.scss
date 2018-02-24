@@ -1,0 +1,42 @@
+.about-header {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid tint($black, 90%);
+}
+
+.about-header .content-wrapper {
+  @include for-tablet-landscape-up {
+    margin-right: 7rem;
+  }
+}
+
+.about-header h1 {
+  font-family: $font-mono;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 3.5rem;
+  letter-spacing: 2px;
+  color: tint($black, 60%);
+}
+
+.about-header p {
+  font-size: 4rem;
+  color: tint($black, 50%);
+  line-height: 1.25;
+}
+
+.about-header p span {
+  color: $black;
+}
+
+.portrait {
+  display: none;
+  @include for-tablet-landscape-up {
+    display: block;
+  }
+}
+
+.portrait img {
+  display: block;
+  width: 40rem;
+}
