@@ -12,7 +12,7 @@ body-class: journal
       <a class="hover-up post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </h2>
     {{ post.excerpt }}
-    <a class="read-more" href="{{ post.url || prepend: site.baseurl }}">Read More</a>
+    <a class="read-more" href="{{ post.url | prepend: site.baseurl }}">Read More</a>
   </li>
 {% endfor %}
 </ul>

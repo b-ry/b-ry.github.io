@@ -1420,6 +1420,20 @@ ul.menu-items li a.active:after {
   color: #383d44;
 }
 
+.intro {
+  width: 75%;
+  margin-bottom: 5rem;
+}
+
+.intro h1 {
+  margin-bottom: 2rem;
+}
+
+.intro h2 {
+  color: #9c9ea2;
+  font-size: 4rem;
+}
+
 .about-section {
   border-bottom: 1px solid #ebecec;
   padding: 4rem 2rem;
