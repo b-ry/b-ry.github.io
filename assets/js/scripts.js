@@ -1,28 +1,19 @@
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
+ 
+var hamburger = document.querySelector('.hamburger');
+var body =document.querySelector('body');
 
-$(document).ready(function() {
-  $('.hamburger').click( function() {
-      $("body").toggleClass("menu-active");
-  } )
-});
+// Add class on timeout to body. 
 
-$(document).ready(function() {
-  
-  setTimeout(function(){
-    $('body').addClass('loaded');
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    body.classList.add('loaded');
   }, 100);
+})
+
+// Adds class menu-active class to body when hamburger is clicked.
+
+hamburger.addEventListener('click', function() {
+
+  body.classList.toggle('menu-active');
 
 });

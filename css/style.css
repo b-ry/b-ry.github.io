@@ -507,14 +507,14 @@ body.menu-active {
 #main {
   width: 100%;
   padding: 0 1rem;
-  margin: 4rem auto;
+  margin: 0 auto 4rem;
 }
 
 @media (min-width: 600px) {
   #main {
     width: 58rem;
-    margin: 7rem auto;
     padding: 0;
+    margin: 0 auto 7rem;
   }
 }
 
@@ -855,6 +855,10 @@ header a span.hide-text {
   margin-right: -50vw;
   margin-top: 4rem;
   margin-bottom: 4rem;
+}
+
+.full-width.banner {
+  margin-top: 0;
 }
 
 .full-width img {
@@ -1266,6 +1270,7 @@ ul.menu-items li a.active:after {
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid #ebecec;
+  margin-top: 7rem;
 }
 
 @media (min-width: 900px) {
@@ -1422,6 +1427,7 @@ ul.menu-items li a.active:after {
 
 .intro {
   width: 75%;
+  margin-top: 7rem;
   margin-bottom: 5rem;
 }
 
