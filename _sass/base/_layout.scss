@@ -5,11 +5,11 @@ body.menu-active {
 #main {
   width: 100%;
   padding: 0 1rem;
-  margin: 4rem auto;
+  margin: 0 auto 4rem;
   @include for-tablet-portrait-up {
     width: 58rem;
-    margin: 7rem auto;
     padding: 0;
+    margin: 0 auto 7rem;
   }
   @include for-tablet-landscape-up {
     width: 88rem;

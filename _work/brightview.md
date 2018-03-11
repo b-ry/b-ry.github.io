@@ -7,7 +7,7 @@ category: Website
 service: UX Design, UI Design, Prototyping
 external-link: http://newmediadenver.github.io/bv/
 teaser-image: projects/brightview/brightview-teaser.png
-banner-image: projects/brightview/bv-banner.jpg
+banner-image: projects/brightview/bv-comp-wire.png
 intro: BrightView is a national landscape management company that wanted to incorporate a ticket system into their product offerings. I designed and built a complete interactive prototype incorporating wire-frames, user flows and interactions.
 ---
 
@@ -18,13 +18,13 @@ intro: BrightView is a national landscape management company that wanted to inco
 <div class="row">
   <h3>Project Goals</h3>
   <ul>
-    <li>give access to residents in order to create tickets</li>
-    <li>allow infield workers to create their own to-do's</li>
-    <li>keep better track of work</li>
-    <li>inform clients of work being done above and beyond.</li>
+    <li>Give access to residents in order to create tickets.</li>
+    <li>Allow infield workers to create their own to-dos.</li>
+    <li>Keep better track of work.</li>
+    <li>Inform clients of work being done above and beyond.</li>
   </ul>
   <figure>
-    <img src="/assets/img/projects/brightview/bv-comp-wire.png" />
+    <img src="/assets/img/projects/brightview/bv-banner.jpg" />
   </figure>
 </div>
 
