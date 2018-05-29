@@ -1,0 +1,22 @@
+footer {
+  text-align: center;
+  @include for-tablet-portrait-up {
+    text-align: left;
+  }
+}
+
+.footer-wrapper {
+  @include for-tablet-portrait-up {
+    display: flex;
+  }
+}
+
+footer h3 {
+  font-weight: 700;
+}
+
+.contact {
+  @include for-tablet-portrait-up {
+    width: 50%;
+  }
+}

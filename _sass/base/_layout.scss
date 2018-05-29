@@ -2,7 +2,8 @@ body.menu-active {
   overflow: hidden;
 }
 
-#main {
+#main,
+footer {
   width: 100%;
   padding: 0 1rem;
   margin: 0 auto 4rem;
@@ -18,5 +19,4 @@ body.menu-active {
     width: 118rem;
   }
 }
-
 
