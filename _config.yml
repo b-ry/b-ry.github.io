@@ -1,6 +1,8 @@
 # Site settings
 title: Bryon Urbanec UI/UX Designer
 
+description: Bryon Urbanec - Designer and web builder valuing user-centered design.
+
 baseurl: "" # the subpath of your site, e.g. /blog/
 # Build settings
 markdown: kramdown
