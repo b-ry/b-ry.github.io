@@ -1,0 +1,22 @@
+.links {
+    @include for-tablet-portrait-up {
+        width: 20%;
+        margin-left: auto;
+    }
+}
+
+.links ul {
+    margin: 0;
+    padding: 0;
+}
+
+.links ul li {
+    text-align: center;
+    list-style-type: none;
+    @include for-tablet-portrait-up {
+        text-align: left;
+    }
+    a {
+        font-size: 1.6rem;
+    }
+}

@@ -1313,6 +1313,33 @@ ul.menu-items li a.active:after {
   width: 40rem;
 }
 
+@media (min-width: 600px) {
+  .links {
+    width: 20%;
+    margin-left: auto;
+  }
+}
+
+.links ul {
+  margin: 0;
+  padding: 0;
+}
+
+.links ul li {
+  text-align: center;
+  list-style-type: none;
+}
+
+@media (min-width: 600px) {
+  .links ul li {
+    text-align: left;
+  }
+}
+
+.links ul li a {
+  font-size: 1.6rem;
+}
+
 footer {
   text-align: center;
 }
