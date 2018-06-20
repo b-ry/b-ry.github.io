@@ -504,14 +504,16 @@ body.menu-active {
   overflow: hidden;
 }
 
-#main {
+#main,
+footer {
   width: 100%;
   padding: 0 1rem;
   margin: 0 auto 4rem;
 }
 
 @media (min-width: 600px) {
-  #main {
+  #main,
+  footer {
     width: 58rem;
     padding: 0;
     margin: 0 auto 7rem;
@@ -519,13 +521,15 @@ body.menu-active {
 }
 
 @media (min-width: 900px) {
-  #main {
+  #main,
+  footer {
     width: 88rem;
   }
 }
 
 @media (min-width: 1200px) {
-  #main {
+  #main,
+  footer {
     width: 118rem;
   }
 }
@@ -1326,7 +1330,6 @@ ul.menu-items li a.active:after {
 }
 
 .links ul li {
-  text-align: center;
   list-style-type: none;
 }
 
@@ -1338,16 +1341,6 @@ ul.menu-items li a.active:after {
 
 .links ul li a {
   font-size: 1.6rem;
-}
-
-footer {
-  text-align: center;
-}
-
-@media (min-width: 600px) {
-  footer {
-    text-align: left;
-  }
 }
 
 @media (min-width: 600px) {
