@@ -1081,7 +1081,10 @@ ul.menu-items li a.active:after {
   width: 150px;
   height: 150px;
   margin: -75px 0 0 -75px;
+  border-radius: 50%;
   background: rgba(89, 172, 172, 0.1);
+  border: 7px solid rgba(89, 172, 172, 0.1);
+  border-top-color: #59acac;
   -webkit-animation: spin 2s linear infinite;
   /* Chrome, Opera 15+, Safari 5+ */
   animation: spin 2s linear infinite;
@@ -1096,8 +1099,11 @@ ul.menu-items li a.active:after {
   left: 5px;
   right: 5px;
   bottom: 5px;
+  border-radius: 50%;
   border: 3px solid #222;
-  -webkit-animation: spin 3s linear infinite;
+  border-top-color: #5b0b82;
+  border-left-color: #5b0b82;
+  -webkit-animation: spin 1s linear infinite;
   /* Chrome, Opera 15+, Safari 5+ */
   animation: spin 3s linear infinite;
   /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -1110,7 +1116,9 @@ ul.menu-items li a.active:after {
   left: 15px;
   right: 15px;
   bottom: 15px;
-  border: 3px solid #80c0c0;
+  border-radius: 50%;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
   -webkit-animation: spin 1.5s linear infinite;
   /* Chrome, Opera 15+, Safari 5+ */
   animation: spin 1.5s linear infinite;
