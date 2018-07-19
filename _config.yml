@@ -7,6 +7,8 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 # Build settings
 markdown: kramdown
 
+highlighter: rouge
+
 exclude: ['node_modules', ‘css’, ‘_scss’]
 keep_files: ['_site/css']
 
@@ -27,3 +29,6 @@ collections:
   work:
     output: true
     permalink: /work/:name
+  lab:
+    output: true
+    permalink: /lab/:name

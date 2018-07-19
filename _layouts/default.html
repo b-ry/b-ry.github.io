@@ -12,18 +12,21 @@
 
     </div>
 
-    {% include header.html %}
+    <div class="main-wrapper">
 
-    <div id="main" class="">
-      {{ content }}
+      {% include header.html %}
+
+      <div id="main" class="">
+        {{ content }}
+      </div>
+
     </div>
     
+    <footer>
+      {% include footer.html %}
+    </footer>
     <script src="/assets/js/scripts.js"></script>
-
+    
   </body>
-
-  <footer>
-    {% include footer.html %}
-  </footer>
 
 </html>
