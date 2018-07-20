@@ -2,6 +2,16 @@ body.menu-active {
   overflow: hidden;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-wrapper {
+  flex: 1;
+}
+
 #main,
 footer {
   width: 100%;

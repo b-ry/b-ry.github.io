@@ -504,6 +504,16 @@ body.menu-active {
   overflow: hidden;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-wrapper {
+  flex: 1;
+}
+
 #main,
 footer {
   width: 100%;
@@ -768,6 +778,350 @@ hr {
   color: #9d6db4;
 }
 
+pre {
+  font-family: "Source Code Pro", Monaco, monospace;
+  font-size: 1.4rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  overflow: scroll;
+}
+
+/*
+
+    Name:       Base16 Railscasts Dark
+    Author:     Ryan Bates (http://railscasts.com)
+
+    Pygments template by Jan T. Sott (https://github.com/idleberg)
+    Created with Base16 Builder by Chris Kempson (https://github.com/chriskempson/base16-builder)
+
+*/
+.highlight .hll {
+  background-color: #3a4055;
+}
+
+.highlight {
+  background: #2b2b2b;
+  color: #f9f7f3;
+}
+
+.highlight .c {
+  color: #5a647e;
+}
+
+/* Comment */
+.highlight .err {
+  color: #da4939;
+}
+
+/* Error */
+.highlight .k {
+  color: #b6b3eb;
+}
+
+/* Keyword */
+.highlight .l {
+  color: #cc7833;
+}
+
+/* Literal */
+.highlight .n {
+  color: #f9f7f3;
+}
+
+/* Name */
+.highlight .o {
+  color: #519f50;
+}
+
+/* Operator */
+.highlight .p {
+  color: #f9f7f3;
+}
+
+/* Punctuation */
+.highlight .cm {
+  color: #5a647e;
+}
+
+/* Comment.Multiline */
+.highlight .cp {
+  color: #5a647e;
+}
+
+/* Comment.Preproc */
+.highlight .c1 {
+  color: #5a647e;
+}
+
+/* Comment.Single */
+.highlight .cs {
+  color: #5a647e;
+}
+
+/* Comment.Special */
+.highlight .gd {
+  color: #da4939;
+}
+
+/* Generic.Deleted */
+.highlight .ge {
+  font-style: italic;
+}
+
+/* Generic.Emph */
+.highlight .gh {
+  color: #f9f7f3;
+  font-weight: bold;
+}
+
+/* Generic.Heading */
+.highlight .gi {
+  color: #a5c261;
+}
+
+/* Generic.Inserted */
+.highlight .gp {
+  color: #5a647e;
+  font-weight: bold;
+}
+
+/* Generic.Prompt */
+.highlight .gs {
+  font-weight: bold;
+}
+
+/* Generic.Strong */
+.highlight .gu {
+  color: #519f50;
+  font-weight: bold;
+}
+
+/* Generic.Subheading */
+.highlight .kc {
+  color: #b6b3eb;
+}
+
+/* Keyword.Constant */
+.highlight .kd {
+  color: #b6b3eb;
+}
+
+/* Keyword.Declaration */
+.highlight .kn {
+  color: #519f50;
+}
+
+/* Keyword.Namespace */
+.highlight .kp {
+  color: #b6b3eb;
+}
+
+/* Keyword.Pseudo */
+.highlight .kr {
+  color: #b6b3eb;
+}
+
+/* Keyword.Reserved */
+.highlight .kt {
+  color: #ffc66d;
+}
+
+/* Keyword.Type */
+.highlight .ld {
+  color: #a5c261;
+}
+
+/* Literal.Date */
+.highlight .m {
+  color: #cc7833;
+}
+
+/* Literal.Number */
+.highlight .s {
+  color: #a5c261;
+}
+
+/* Literal.String */
+.highlight .na {
+  color: #6d9cbe;
+}
+
+/* Name.Attribute */
+.highlight .nb {
+  color: #f9f7f3;
+}
+
+/* Name.Builtin */
+.highlight .nc {
+  color: #ffc66d;
+}
+
+/* Name.Class */
+.highlight .no {
+  color: #da4939;
+}
+
+/* Name.Constant */
+.highlight .nd {
+  color: #519f50;
+}
+
+/* Name.Decorator */
+.highlight .ni {
+  color: #f9f7f3;
+}
+
+/* Name.Entity */
+.highlight .ne {
+  color: #da4939;
+}
+
+/* Name.Exception */
+.highlight .nf {
+  color: #6d9cbe;
+}
+
+/* Name.Function */
+.highlight .nl {
+  color: #f9f7f3;
+}
+
+/* Name.Label */
+.highlight .nn {
+  color: #ffc66d;
+}
+
+/* Name.Namespace */
+.highlight .nx {
+  color: #6d9cbe;
+}
+
+/* Name.Other */
+.highlight .py {
+  color: #f9f7f3;
+}
+
+/* Name.Property */
+.highlight .nt {
+  color: #519f50;
+}
+
+/* Name.Tag */
+.highlight .nv {
+  color: #da4939;
+}
+
+/* Name.Variable */
+.highlight .ow {
+  color: #519f50;
+}
+
+/* Operator.Word */
+.highlight .w {
+  color: #f9f7f3;
+}
+
+/* Text.Whitespace */
+.highlight .mf {
+  color: #cc7833;
+}
+
+/* Literal.Number.Float */
+.highlight .mh {
+  color: #cc7833;
+}
+
+/* Literal.Number.Hex */
+.highlight .mi {
+  color: #cc7833;
+}
+
+/* Literal.Number.Integer */
+.highlight .mo {
+  color: #cc7833;
+}
+
+/* Literal.Number.Oct */
+.highlight .sb {
+  color: #a5c261;
+}
+
+/* Literal.String.Backtick */
+.highlight .sc {
+  color: #f9f7f3;
+}
+
+/* Literal.String.Char */
+.highlight .sd {
+  color: #5a647e;
+}
+
+/* Literal.String.Doc */
+.highlight .s2 {
+  color: #a5c261;
+}
+
+/* Literal.String.Double */
+.highlight .se {
+  color: #cc7833;
+}
+
+/* Literal.String.Escape */
+.highlight .sh {
+  color: #a5c261;
+}
+
+/* Literal.String.Heredoc */
+.highlight .si {
+  color: #cc7833;
+}
+
+/* Literal.String.Interpol */
+.highlight .sx {
+  color: #a5c261;
+}
+
+/* Literal.String.Other */
+.highlight .sr {
+  color: #a5c261;
+}
+
+/* Literal.String.Regex */
+.highlight .s1 {
+  color: #a5c261;
+}
+
+/* Literal.String.Single */
+.highlight .ss {
+  color: #a5c261;
+}
+
+/* Literal.String.Symbol */
+.highlight .bp {
+  color: #f9f7f3;
+}
+
+/* Name.Builtin.Pseudo */
+.highlight .vc {
+  color: #da4939;
+}
+
+/* Name.Variable.Class */
+.highlight .vg {
+  color: #da4939;
+}
+
+/* Name.Variable.Global */
+.highlight .vi {
+  color: #da4939;
+}
+
+/* Name.Variable.Instance */
+.highlight .il {
+  color: #cc7833;
+}
+
+/* Literal.Number.Integer.Long */
 header h1 {
   margin: 0;
 }
@@ -904,6 +1258,23 @@ figure img {
     float: right;
     padding: 1rem 0 1rem 2rem;
   }
+}
+
+.experiment-links {
+  margin: 0;
+  padding: 0;
+}
+
+.experiment-links li {
+  display: block;
+  list-style-type: none;
+  line-height: 1;
+}
+
+.experiment-links a {
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: .5rem 0;
 }
 
 header {
@@ -1365,6 +1736,63 @@ footer h3 {
   .contact {
     width: 50%;
   }
+}
+
+ul.lab-list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2rem;
+}
+
+@media (min-width: 1200px) {
+  ul.lab-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+ul.lab-list li {
+  list-style-type: none;
+  list-style-image: none;
+}
+
+ul.lab-list a {
+  display: block;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  transition-duration: .4s;
+}
+
+ul.lab-list a:after {
+  display: none;
+}
+
+ul.lab-list a:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+}
+
+ul.lab-list img {
+  width: 100%;
+}
+
+.lab-title-wrapper {
+  padding: 0 1rem 1rem;
+}
+
+@media (min-width: 600px) {
+  .lab-title-wrapper {
+    padding: 0 2rem 2rem;
+  }
+}
+
+.lab-title-wrapper .category {
+  font-size: 1.2rem;
+  color: #6c7582;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
 }
 
 .project-list {
