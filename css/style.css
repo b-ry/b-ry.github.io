@@ -678,7 +678,7 @@ blockquote {
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 1.6em;
-  border-left: 4px solid gray;
+  border-left: 4px solid #807f7f;
   font-family: Georgia, "Times New Roman", serif;
 }
 
@@ -744,13 +744,15 @@ hr {
   padding-top: 1.5em;
 }
 
-#main a {
+#main a,
+footer a {
   text-decoration: none;
   position: relative;
   color: #8c54a8;
 }
 
-#main a:after {
+#main a:after,
+footer a:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -761,20 +763,24 @@ hr {
   transition: .3s ease-in-out;
 }
 
-#main a:link {
+#main a:link,
+footer a:link {
   color: #7c3c9b;
 }
 
-#main a:visited {
+#main a:visited,
+footer a:visited {
   color: #7c3c9b;
 }
 
-#main a:hover:after {
+#main a:hover:after,
+footer a:hover:after {
   width: 100%;
   background: #5b0b82;
 }
 
-#main a:active {
+#main a:active,
+footer a:active {
   color: #9d6db4;
 }
 
@@ -1222,6 +1228,10 @@ header a span.hide-text {
 .full-width img {
   width: 100%;
   height: auto;
+}
+
+figure {
+  margin-bottom: 3rem;
 }
 
 figure img {

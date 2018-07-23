@@ -226,7 +226,8 @@
   }
 
   // Anchors
-  #main a {
+  #main a,
+  footer a {
     text-decoration: none;
     position: relative;
     color: tint($purple, 30%);

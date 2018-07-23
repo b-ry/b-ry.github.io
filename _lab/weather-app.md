@@ -3,7 +3,7 @@ layout: experiment
 title: Weather App
 featured: true
 weight: 0
-category: Javascript, ES6
+category: JavaScript, ES6
 service: 
 github-link: https://github.com/b-ry/weatherApp
 live-link: weatherApp
@@ -18,9 +18,9 @@ The weather app was one of the final projects for JavaScript Basics section of f
 
 ## Process
 
-This was my first real javascript program. I had written some small functions or event listeners before, simple DOM manipulations but nothing this complex. I really didn't have a process or really have a good idea of how to shape my code. So, I not only used the example that freeCodeCamp gave as a frame work but also found a couple other projects people had done and used those as helpers to figure this stuff out. 
+This was my first real JavaScript program. I had written some small functions or event listeners before, simple DOM manipulations but nothing this complex. I really didn't have a process or really have a good idea of how to shape my code. So, I not only used the example that freeCodeCamp gave as a frame work but also found a couple other projects people had done and used those as helpers to figure this stuff out. 
 
-One thing I noticed when looking at other examples of this project was that a very large number of them were written in jQuery. JQuery is cool but I wasn't trying to learn a library I wanted to learn the source, vanilla javascript. So that examples I found gave some ideas on maybe structuring my code but provided little in the way of actually writing code.
+One thing I noticed when looking at other examples of this project was that a very large number of them were written in jQuery. JQuery is cool but I wasn't trying to learn a library I wanted to learn the source, vanilla JavaScript. So that examples I found gave some ideas on maybe structuring my code but provided little in the way of actually writing code.
 
 Things started to finally come together, I was able to get the fetch working, returning an object that I could use to display the content. Then the math to take the temperature and convert it from celsius to fahrenheit fell into place. Dang! My code was in one big function. "This isn't right, it can't be". This is where I started to refactor and see how the code could be broken up into smaller more modular functions, easier to maintain and understand what was happening. A major light bulb went on with this realization. 
 
