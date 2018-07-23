@@ -1,0 +1,21 @@
+<section class="lab-projects clearfix">
+  <ul class="lab-list">
+    {% assign featuredLab = site.lab | sort:"weight" %} {% for lab in featuredLab %} {% if lab.teaser-image %}
+    <li>
+      <a href="{{ lab.url | prepend: site.baseurl }}">
+        <figure class="lab-asset-wrapper">
+          <img src="{{site.baseurl}}/assets/img/{{lab.teaser-image}}" />
+        </figure>
+        <div class="lab-title-wrapper">
+          <div class="category">
+            {{ lab.category }}
+          </div>
+          <h2>
+            {{ lab.title }}
+          </h2>
+        </div>
+      </a>
+    </li>
+    {% endif %} {% endfor %}
+  </ul>
+</section>

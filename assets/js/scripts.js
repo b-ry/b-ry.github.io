@@ -7,7 +7,7 @@ var body =document.querySelector('body');
 window.addEventListener('load', function() {
   setTimeout(function() {
     body.classList.add('loaded');
-  }, 100);
+  }, 1000);
 })
 
 // Adds class menu-active class to body when hamburger is clicked.

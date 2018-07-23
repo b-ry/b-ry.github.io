@@ -1,0 +1,30 @@
+---
+layout: default
+body-class: project
+---
+
+  {% if page.banner-image %}
+  <figure class="full-width banner">
+	  <img class="" src="{{site.baseurl}}/assets/img/{{page.banner-image}}">
+  </figure>
+  {% endif %}
+
+  <div class="project-header clearfix">
+    <div class="projectTitleWrapper">
+      <h1 class="page-title">{{ page.title }}</h1>
+      <ul class="experiment-links">
+        {% if page.github-link %}
+          <li><a class="" href="{{ page.github-link }}" target="_blank">View the code base on Github</a></li>
+        {% endif %}
+        {% if page.live-link %}
+          <li><a class="" href="{{site.baseurl}}/{{ page.live-link }}" target="_blank">Look at the project</a></li>
+        {% endif %}
+      </ul>
+    </div>
+    <div class="project-intro">
+      <p>{{ page.intro  }}</p>
+    </div>
+  </div>
+  <article class="project-content clearfix">
+    {{ content }}
+  </article>

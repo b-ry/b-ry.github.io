@@ -12,9 +12,9 @@ intro: The Denver Rescue Mission(DRM) has been changing lives for 125 years. The
 ---
 
 <div class="row">
-  <p>While at Newmedia the team created an incredibly robust Drupal admin and backend integration with Blackbaud providing the ability to create custom donation forms. This provided a huge amount of flexibility to the DRM team.</p>
+  <p>The Newmedia team created an incredibly robust Drupal admin and backend integration with Blackbaud providing the ability to create custom donation forms. This provided a huge amount of flexibility to the DRM team.</p>
 
-  <p>While the backend was being integrated we considered what the what the form would look like. The form we needed to focus our attention on was the main donation form. This is where the majority of donations occur and since we were coming up on their largest giving time of the year it was also the most important.</p>
+  <p>While the backend was being integrated we considered the form. How would it act? Would it be paged or display the who form? Could it help provide feedback about how donations would be spent? Could it help make a emotional connection with the donor to the organization and its cause?</p>
 
   <figure class="full-width">
     <img src="/assets/img/projects/drm/donation-form.jpg"/>
@@ -24,25 +24,30 @@ intro: The Denver Rescue Mission(DRM) has been changing lives for 125 years. The
 <div class="row">
   <h3>Design</h3>
 
-  <p>We had to consider several things in design. The forms had many fields, we needed to make those forms easy to complete so we made it a multi section form, as one section is completed the donor would move to the next making the form less daunting.</p>
+  <h4>The Form</h4>  
+  <p>The forms were a major challenge. On the one hand from a business perspective we had to integrate various fields in all kinds of different orders. And on the other hand they needed to be as easy as possible for a donor to fill out in order to complete the donation process. Creating a paged solution proved to be the best way to meet both goals.</p>
 
-  <p>While we were building the form we thought there was a bit of a disconnect between some amount a donor might give and how their money would be used. To help connect the donation with something more tangible we created a widget that would react with the amount that was selected in the donation form. This solution helped to provide a bit more context and engage an emotional connection for the donor.</p>
+  <h4>Emotional Impact</h4>
+  <p>While building the forms we asked our selves if there was a bit of a disconnect between some amount a donor might give and how their money would be used. Yes, a major one. This was a huge opportunity. So we presented to the DRM team a solution that provided real time feedback to a donor informing them of what could be accomplished with their donation.   
+  </p>
+  <figure>
+    <img style="width: auto;" src="/assets/img/projects/drm/drm-form.gif" />
+  </figure>
 </div>
 
 <div class="row">
   <div class="leftAlignedContainer">
     <h3>Results</h3>
+    <p>During the first year of usage the 2 months from May 1st to June 30th we witnessed a massive increase in total number of donations from the same time the year before.</p>
 
-    <figure class="floatLeft">
-      <img src="/assets/img/projects/drm/donation-amount.svg" />
-    </figure>
-
-    <figure class="floatRight">
+    <figure style="display: inline-block; width: 40%;">
       <img src="/assets/img/projects/drm/total-donations.svg" />
     </figure>
-    
-    <p>During the first year of usage the 2 months between May 1st and June 30th we witnessed a massive increase in donations from the same time the year before.</p>
 
+    <figure style="display: inline-block; width: 40%;">
+      <img src="/assets/img/projects/drm/donation-amount.svg" />
+    </figure>
+    
   </div>
 </div>
 
