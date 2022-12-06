@@ -8,7 +8,7 @@
     "grunt-concurrent": "^2.0.3",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-jshint": "^1.0.0",
-    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-postcss": "^0.5.5",
     "grunt-sass": "^2.1.0",
     "grunt-sass-import": "^0.2.2",
