@@ -1,0 +1,43 @@
+
+// =========================================
+// Layout
+// =========================================
+// Sets the main structural layout of the site.
+//
+
+@use 'colors' as *;
+@use 'functions' as *;
+@use 'mixins' as *;
+
+.main-canvas {
+  max-width: 1600px;
+  margin: 0 auto;
+
+  @include bp-min(sm-desktop) {
+    display: grid;
+    grid-template-columns:  45% 1fr;
+    gap: 2rem;
+  }
+
+  @include bp-min(desktop) {
+    gap: 4rem;
+  }
+}
+
+main {
+  padding-block-start: 0;
+
+  @include bp-min(sm-desktop) {
+    padding-block-start: 14rem;
+    padding-inline: 2rem;
+  }
+}
+
+.pageContent {
+  padding-block: 5rem;
+  padding-inline: 2rem;
+  @include bp-min(sm-desktop) {
+    padding-block: 0;
+    padding-inline: 0;
+  }
+}

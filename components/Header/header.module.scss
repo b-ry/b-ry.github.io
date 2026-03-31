@@ -1,0 +1,208 @@
+@use '../../styles/colors' as *;
+@use '../../styles/functions' as *;
+@use '../../styles/mixins' as *;
+
+/*
+============================================================
+// Header & Navigation
+// ============================================================*/
+.headerContent {
+  container-type: inline-size;
+
+  display: flex;
+  flex-direction: column;
+  inline-size: 100%;
+  padding: 5rem 4rem 2rem;
+  top: 0;
+  background: var(--navy);
+  position: relative;
+  overflow: hidden;
+
+  @include bp-min(tablet) {
+    padding: 10rem 4rem 3.2rem;
+  }
+
+  @include bp-min(sm-desktop) {
+    block-size: 100vh;
+    position: sticky;
+    overflow: visible;
+  }
+
+  @include bp-min(desktop) {
+    block-size: 100vh;
+    padding: 14rem 6.4rem 3.2rem 6.4rem;
+    position: sticky;
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100vh;
+      background: var(--navy);
+      position: absolute;
+      top: 0;
+      transform: translateX(-100%);
+    }
+  }
+
+  &:before {
+    content: "FE";
+    color: var(--muted);
+    font-size: 30rem;
+    font-family: var(--font-sans);
+    font-weight: 900;
+    display: flex;
+    position: absolute;
+    bottom: -6rem;
+    right: .2rem;
+    align-items: flex-end;
+    line-height: 1;
+    opacity: 0.1;
+  }
+}
+
+.siteTitle {
+  font-size: 2.8rem;
+  margin-block-end: 2rem;
+
+  @include bp-min(tablet) {
+    font-size: 3rem;
+  }
+  @include bp-min(desktop) {
+    font-size: 4rem;
+    margin-block-end: 3.2rem;
+  }
+
+  a {
+    color: var(--muted);
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.subTitle {
+  font-size: 5rem;
+  letter-spacing: -.1rem;
+  line-height: .9;
+  color: var(--light);
+  margin-block-end: 3.2rem;
+
+  @include bp-min(tablet) {
+    font-size: 8rem;
+  }
+  @include bp-min(sm-desktop) {
+    font-size: 6rem;
+  }
+  @include bp-min(desktop) {
+    font-size: 8rem;
+    margin-block-end: 6.4rem;
+  }
+  @include bp-min(lg-desktop) {
+    font-size: 10rem;
+  }
+
+  span {
+    display: block;
+    color: var(--orange);
+  }
+}
+
+.headerIntro {
+  font-size: 2rem;
+  color: var(--light);
+  font-weight: 300;
+
+  @container (inline-size > 480px) {
+    font-size: 2.4rem;
+  }
+}
+
+.menuItems {
+  display: none;
+
+  @include bp-min(sm-desktop) {
+    display: block;
+    padding: 0;
+    list-style-type: none;
+  }
+}
+
+.menuItem a {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.6rem;
+  color: var(--orange);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: .4rem;
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: all .3s ease-in-out;
+  }
+
+  .menuItemDetail {
+    display: inline-block;
+    inline-size: 6rem;
+    block-size: .2rem;
+    background: var(--orange);
+
+    @media (prefers-reduced-motion: no-preference) {
+      transition: all .3s ease-in-out;
+    }
+  }
+
+  &:hover{
+    color: var(--light);
+    .menuItemDetail {
+      inline-size: 10rem;
+      background: var(--light);
+    }
+    
+    &::after {
+      display: none;
+    }
+  }
+}
+
+
+// Social
+.socialMenuItems {
+  margin-block-start: auto;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding-block-start: 2rem;
+  padding-inline-start: 0;
+  list-style-type: none;
+
+  @include bp-min(tablet) {
+    padding-block-start: 6.4rem;
+  }
+}
+
+.socialMenuItem {
+  inline-size: 3rem;
+  block-size: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.socialMenuItem a {
+  color: var(--light);
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: all .3s ease-in-out;
+  }
+  &:hover {
+    color: var(--orange);
+  }
+  &:after {
+    display: none;
+  }
+}
+
+.socialIcon {
+  display: block;
+  inline-size: 2.4rem;
+  block-size: 2.4rem;
+}

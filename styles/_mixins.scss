@@ -1,0 +1,44 @@
+@use 'sass:list';
+@use 'sass:map';
+
+$grid-breakpoints: (
+  mobile: 0,
+  lg-mobile: 475px,
+  sm-tablet: 576px,
+  tablet: 768px,
+  lg-tablet: 992px,
+  sm-desktop: 1024px,
+  desktop: 1200px,
+  lg-desktop: 1440px,
+);
+
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+  $min: map.get($breakpoints, $name);
+
+  @return if(sass($min != 0): $min; else: null);
+}
+
+@mixin bp-min($name, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @error '[ #{$name} ] is not defined in $breakpoints. Found: [ #{map.keys($breakpoints)} ]. Make sure the breakpoint you are trying to use is defined.';
+  }
+}
+
+
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+.clearfix {
+  @include clearfix();
+}

@@ -1,0 +1,23 @@
+/* CSS Modules scope these class names to this component only.
+   The mixin `for-tablet-portrait-up` expands to: @media (min-width: 600px) */
+
+.footer {
+  inline-size: 75%;
+  padding-block: 4rem 5rem;
+  color: var(--navy);
+}
+
+.footer p {
+  font-size: 1.4rem;
+}
+
+.copyright {
+  display: block;
+  margin-block-start: 2rem;
+  font-size: 1.2rem;
+  opacity: 0.75;
+}
+
+
+
+

@@ -1,0 +1,13 @@
+// =========================================
+// globals.scss
+// =========================================
+// Entry point for all global styles. Partials are loaded in dependency orde.
+//
+
+@use 'colors' as *;
+@use 'functions' as *;
+@use 'mixins' as *;
+@use 'base' as *;
+@use 'typography' as *;
+@use 'layout' as *;
+@use 'utilities' as *;

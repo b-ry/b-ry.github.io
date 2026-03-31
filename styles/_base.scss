@@ -1,0 +1,131 @@
+
+// =========================================
+// Base
+// =========================================
+// This is a general reset and initail styles.
+//
+
+:root {
+  --orange: #fd802e;
+  --navy:   #233d4c;
+  --black:  #000000;
+  --white:  #ffffff;
+  --off:    #f7f4f0;
+  --light:  #e8e4de;
+  --muted:  #7a8a94;
+  --text:   #62707A;
+
+  --font-sans:   'Outfit', Helvetica, Arial, sans-serif;
+  --font-serif:  Georgia, 'Times New Roman', serif;
+  --font-mono:   'Source Code Pro', Monaco, monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15;
+  font-size: 62.5%; // 1rem = 10px
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 1.6rem;
+  color: var(--navy);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &.menu-active {
+    overflow: hidden;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--navy);
+  font-family: var(--font-sans);
+  font-weight: 900;
+  margin: 0 0 1.6rem;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 4rem;
+  &::after { display: none; }
+}
+h2 { font-size: 3.2rem; }
+h3 { font-size: 2.4rem; }
+h4 { font-size: 1.8rem; }
+
+p {
+  margin: 0 0 1.6rem;
+  font-size: 1.8rem;
+}
+
+a {
+  color: var(--navy);
+  position: relative;
+  text-decoration: none;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 1px;
+    width: 0;
+    background: var(--navy);
+    transition: width 0.3s ease;
+  }
+
+  &:hover:after {
+    width: 100%;
+  }
+}
+
+a.no-border:after,
+a.no-border:hover:after {
+  display: none;
+}
+
+ul, ol {
+  font-size: 1.8rem;
+  line-height: 1.25;
+}
+
+li {
+  margin-block-end: 1rem;
+}
+
+figure {
+  margin: 0 0 3rem;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+img {
+  max-width: 100%;
+  border: none;
+}
+
+code, pre {
+  font-family: var(--font-mono);
+  font-size: 1.4rem;
+}
+
+pre {
+  background: gray(95%);
+  padding: 2rem;
+  overflow-x: auto;
+  border-left: 3px solid var(--orange);
+}

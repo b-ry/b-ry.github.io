@@ -1,6 +1,13 @@
-_site
-.sass-cache
-node_modules
-bower_components
+# Next.js
+.next/
+out/
+next-env.d.ts
 
+# Dependencies
+node_modules/
+
+# Build artifacts
+.sass-cache/
+
+# OS
 .DS_Store

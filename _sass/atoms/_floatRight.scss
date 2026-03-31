@@ -1,7 +1,0 @@
-.floatRight {
-  margin: 0 auto;
-  @include for-tablet-portrait-up {
-    float: right;
-    padding: 1rem 0 1rem 2rem;
-  }
-}

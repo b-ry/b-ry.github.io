@@ -1,0 +1,22 @@
+@use 'sass:color';
+@use 'sass:math';
+@use 'colors' as *;
+
+
+
+@function rem($pixels, $context: $base-font-size) {
+  @return math.div($pixels, $context) * 1rem;
+}
+
+@function tint($c, $percentage) {
+  @return color.mix(white, $c, $percentage);
+}
+
+@function shade($c, $percentage) {
+  @return color.mix(black, $c, $percentage);
+}
+
+// gray() mixes white into the base dark color — equivalent of tint($navy, X%)
+@function gray($percentage) {
+  @return color.mix(white, #233d4c, $percentage);
+}
