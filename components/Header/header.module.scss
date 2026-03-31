@@ -32,11 +32,12 @@
     block-size: 100vh;
     padding: 14rem 6.4rem 3.2rem 6.4rem;
     position: sticky;
+
     &:after {
       content: "";
       display: block;
-      width: 100%;
-      height: 100vh;
+      inline-size: 100%;
+      block-size: 100vh;
       background: var(--navy);
       position: absolute;
       top: 0;
@@ -47,16 +48,21 @@
   &:before {
     content: "FE";
     color: var(--muted);
-    font-size: 30rem;
+    font-size: 18rem;
     font-family: var(--font-sans);
     font-weight: 900;
     display: flex;
     position: absolute;
-    bottom: -6rem;
+    bottom: -3rem;
     right: .2rem;
     align-items: flex-end;
     line-height: 1;
     opacity: 0.1;
+
+    @include bp-min(tablet) {
+      font-size: 30rem;
+      bottom: -6rem;
+    }
   }
 }
 

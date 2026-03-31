@@ -1,3 +1,4 @@
+@use '../styles/mixins' as *;
 
 .jobList,
 .projectList {
@@ -40,7 +41,9 @@
 .jobList:hover > li,
 .projectList:hover > li {
   /* Fade all items when the list (parent) is hovered */
-  opacity: 0.5;
+  @include bp-min(sm-desktop) {
+    opacity: 0.5;
+  }
 }
 
 .jobList > li:hover,
