@@ -1,10 +1,15 @@
-/* CSS Modules scope these class names to this component only.
-   The mixin `for-tablet-portrait-up` expands to: @media (min-width: 600px) */
+@use '../../styles/mixins' as *;
 
 .footer {
-  inline-size: 75%;
+  inline-size: 100%;
   padding-block: 4rem 5rem;
+  padding-inline: 4rem;
   color: var(--navy);
+
+  @include bp-min(sm-desktop) {
+    inline-size: 75%;
+    padding-inline: 2rem;
+  }
 }
 
 .footer p {
@@ -17,7 +22,3 @@
   font-size: 1.2rem;
   opacity: 0.75;
 }
-
-
-
-
