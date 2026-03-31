@@ -88,7 +88,7 @@ export default function Nav() {
           </li>
           <li className={styles.socialMenuItem}>
             <Link
-            href="#" 
+            href="bryonurbanec-resume.pdf" 
             onClick={() => setMenuOpen(false)}
             >
               <span className={styles.socialIcon}>
