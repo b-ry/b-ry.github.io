@@ -12,8 +12,8 @@ const outfit = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'Bryon Urbanec — UI/UX Designer & Developer',
-  description: 'Portfolio of Bryon Urbanec, UI/UX Designer and Front-end Developer in Northern Colorado.',
+  title: 'Bryon Urbanec — Front-End Developer & Designer',
+  description: 'Portfolio of Bryon Urbanec,Front-End Developer & Designer in Northern Colorado.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

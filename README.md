@@ -1,23 +1,52 @@
-# Quick Start
+# b-ry.github.io
 
-## Requirements
-In order to get the system up you'll need to have installed:
+Personal portfolio site for Bryon Urbanec — UI/UX Designer & Front-end Developer.
 
-* [node.js](https://nodejs.org/en/)
-* [grunt](http://gruntjs.com/getting-started)
-* [bower](https://bower.io/)
+Built with [Next.js 15](https://nextjs.org/) and deployed to GitHub Pages via GitHub Actions.
 
-## Installing 
+## Stack
 
-* Clone project
-* cd/[PROJECT]
+- **Framework:** Next.js 15 (static export)
+- **Language:** TypeScript
+- **Styles:** SCSS Modules + global SCSS
+- **Content:** Markdown files parsed with gray-matter and remark
+- **Animations:** GSAP
+- **Fonts:** Outfit (variable font, self-hosted via `next/font/local`)
+- **Deploy:** GitHub Actions → GitHub Pages
 
-In your terminal run these commands:
+## Getting started
 
-    1. $npm install  _You may need to sudo in order for this command to work_
+```bash
+# Install dependencies
+npm install
 
-    2. $bower install
+# Start dev server (Turbopack)
+npm run dev
+```
 
-    3. $grunt serve
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-* Go to your browser. You should now see the site at *localhost:4000*
+## Content
+
+Content lives in the `content/` directory, organized by type:
+
+```
+content/
+  job/      # Work experience entries
+  work/     # Portfolio projects
+  lab/      # Experimental projects
+  posts/    # Blog posts
+```
+
+Each file is a Markdown file with YAML frontmatter.
+
+## Building & deploying
+
+Pushing to `master` triggers the GitHub Actions workflow which builds the static site and deploys it to GitHub Pages automatically.
+
+```bash
+# Build static export locally
+npm run build
+```
+
+Output is written to `./out`.
