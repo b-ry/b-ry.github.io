@@ -1,12 +1,12 @@
 .visually-hidden {
   border: 0;
   clip-path: inset(50%);
-  height: 1px;
+  block-size: 1px;
   margin: 0;
   overflow: hidden;
   position: absolute;
   white-space: nowrap;
-  width: 1px;
+  inline-size: 1px;
 }
 
 .skip-link {
@@ -23,7 +23,7 @@
 .skip-link:focus {
   top: 2px; /* Show on focus */
   left: 2px;
-  width: fit-content;
-  height: auto;
+  inline-size: fit-content;
+  block-size: auto;
   padding: 4px 8px;
 }

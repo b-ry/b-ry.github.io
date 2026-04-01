@@ -1,0 +1,11 @@
+@use '../../../styles/mixins' as *;
+
+.projectWrapper {
+  padding-block: 4rem 0;
+  padding-inline: 4rem;
+
+  @include bp-min(sm-desktop) {
+    padding-block: 0;
+    padding-inline: 0;
+  }
+}

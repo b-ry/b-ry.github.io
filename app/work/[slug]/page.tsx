@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import { getAllSlugs, getContentBySlug } from '@/lib/content'
+import styles from './page.module.scss'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -23,7 +24,7 @@ export default async function WorkPost({ params }: Props) {
   const externalLink = frontmatter['external-link']
 
   return (
-    <>
+    <section className={styles.projectWrapper}>
       {bannerImage && (
         <figure className="banner">
           <Image
@@ -36,9 +37,9 @@ export default async function WorkPost({ params }: Props) {
         </figure>
       )}
 
-      <div className="project-header clearfix">
-        <div className="projectTitleWrapper">
-          <h1 className="page-title">{frontmatter.title}</h1>
+      <div className={styles.projectHeader}>
+        <div className="styles.projectTitleWrapper">
+          <h1 className={styles.pageTitle}>{frontmatter.title}</h1>
           <div className="service-list">
             {frontmatter.service}
             {externalLink && (
@@ -49,7 +50,7 @@ export default async function WorkPost({ params }: Props) {
             )}
           </div>
         </div>
-        <div className="project-intro">
+        <div className={styles.projectIntro}>
           <p>{frontmatter.intro}</p>
         </div>
       </div>
@@ -58,6 +59,6 @@ export default async function WorkPost({ params }: Props) {
         className="project-content clearfix"
         dangerouslySetInnerHTML={{ __html: contentHtml ?? '' }}
       />
-    </>
+    </section>
   )
 }

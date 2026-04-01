@@ -79,14 +79,14 @@ a {
     position: absolute;
     bottom: -2px;
     left: 0;
-    height: 1px;
-    width: 0;
+    block-size: 1px;
+    inline-size: 100%;
     background: var(--navy);
-    transition: width 0.3s ease;
+    transition: inline-size 0.3s ease;
   }
 
   &:hover:after {
-    width: 100%;
+    inline-size: 0%;
   }
 }
 
@@ -109,8 +109,8 @@ figure {
 }
 
 figure img {
-  width: 100%;
-  height: auto;
+  inline-size: 100%;
+  block-size: auto;
 }
 
 img {

@@ -10,7 +10,7 @@
 @use 'mixins' as *;
 
 .main-canvas {
-  max-width: 1600px;
+  max-inline-size: 1600px;
   margin: 0 auto;
 
   @include bp-min(sm-desktop) {
@@ -28,8 +28,12 @@ main {
   padding-block-start: 0;
 
   @include bp-min(sm-desktop) {
-    padding-block-start: 14rem;
+    padding-block-start: 10rem;
     padding-inline: 2rem;
+  }
+
+  @include bp-min(desktop) {
+    padding-block-start: 14rem;
   }
 }
 
