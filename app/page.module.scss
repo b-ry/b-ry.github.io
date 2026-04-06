@@ -1,5 +1,32 @@
 @use '../styles/mixins' as *;
 
+@keyframes slide-in {
+  from { /* or 0% */
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to { /* or 100% */
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.introText {
+  padding-inline: 2rem;
+  margin-block-end: 6rem;
+  
+
+  // @media (prefers-reduced-motion: no-preference) {
+  //   animation: slide-in .3s ease-in-out;
+  //   animation-delay: .3s;
+  // }
+}
+
+.introText p {
+  font-size: 2.2rem;
+  line-height: 1.5;
+}
+
 .jobList,
 .projectList {
   position: relative;
@@ -42,14 +69,14 @@
 .projectList:hover > li {
   /* Fade all items when the list (parent) is hovered */
   @include bp-min(sm-desktop) {
-    opacity: 0.5;
+    opacity: 0.5 !important;
   }
 }
 
 .jobList > li:hover,
 .projectList > li:hover {
   /* Restore full opacity to the specific item being hovered */
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 // Resume Link

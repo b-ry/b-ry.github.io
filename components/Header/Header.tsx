@@ -1,19 +1,32 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
 import styles from './header.module.scss'
-import '@/styles/globals.scss' 
+import '@/styles/globals.scss'
+import gsap from 'gsap'
 
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false)
   const pathname = usePathname()
+  const headerContentRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    if (!headerContentRef.current) return
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    gsap.from(headerContentRef.current.children, {
+      opacity: 0,
+      duration: reducedMotion ? 0 : 0.6,
+      stagger: 0.12,
+      ease: 'power2.out',
+    })
+  }, [])
 
   return (
     <header className={clsx(styles.header, 'clearfix', 'header')}>
-      <div className={styles.headerContent}>
+      <div className={styles.headerContent} ref={headerContentRef}>
         <h1 className={styles.siteTitle}>
           <Link className={styles.siteLogo} href="/">
             Bryon Urbanec
