@@ -16,13 +16,10 @@ export default function Nav() {
   useEffect(() => {
     if (!headerContentRef.current) return
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    gsap.from(headerContentRef.current.children, {
-      opacity: 0,
-      duration: reducedMotion ? 0 : 0.6,
-      stagger: 0.12,
-      ease: 'power2.out',
-    })
-  }, [])
+    gsap.fromTo(headerContentRef.current.children, 
+      { opacity: 0, y: 30 },   // from
+      { opacity: 1, y: 0, duration: 0.5, ease: 'power2.out', scrollTrigger: { trigger: headerContentRef.current.children, start: 'top 70%' } })  // to
+    }, [])
 
   return (
     <header className={clsx(styles.header, 'clearfix', 'header')}>

@@ -66,6 +66,13 @@
   }
 }
 
+.siteTitle,
+.subTitle,
+.headerIntro,
+.menuItems {
+  opacity: 0;
+}
+
 .siteTitle {
   font-size: 2.8rem;
   margin-block-end: 2rem;

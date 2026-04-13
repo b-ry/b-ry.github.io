@@ -1,25 +1,14 @@
 @use '../styles/mixins' as *;
 
-@keyframes slide-in {
-  from { /* or 0% */
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  to { /* or 100% */
-    transform: translateY(0);
-    opacity: 1;
-  }
+.introText,
+#experience > li,
+#projects > li {
+  opacity: 0;
 }
 
 .introText {
   padding-inline: 2rem;
   margin-block-end: 6rem;
-  
-
-  // @media (prefers-reduced-motion: no-preference) {
-  //   animation: slide-in .3s ease-in-out;
-  //   animation-delay: .3s;
-  // }
 }
 
 .introText p {
