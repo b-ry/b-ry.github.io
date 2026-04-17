@@ -33,7 +33,8 @@ export default function Nav() {
           Front-End
           <span>Developer</span>
         </h2>
-        <p className={styles.headerIntro}>I build fast, polished interfaces that people love using. Ten years of craft, a designer's eye, and the tools to ship what matters.</p>
+        <p className={styles.headerIntro}>Front-End Developer, crafting accessible, performant web experiences across agency, enterprise, and government.</p>
+        
 
         <nav className={styles.menu}>
           <ul className={styles.menuItems}>
