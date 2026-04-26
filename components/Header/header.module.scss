@@ -208,6 +208,7 @@
   }
   &:hover {
     color: var(--orange);
+    transform: scale(1.1);
   }
   &:after {
     display: none;
