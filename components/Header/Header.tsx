@@ -18,7 +18,7 @@ export default function Nav() {
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     gsap.fromTo(headerContentRef.current.children, 
       { opacity: 0, y: 30 },   // from
-      { opacity: 1, y: 0, duration: 0.5, ease: 'power2.out', scrollTrigger: { trigger: headerContentRef.current.children, start: 'top 70%' } })  // to
+      { opacity: 1, y: 0, duration: 0.5, ease: 'power2.out', scrollTrigger: { trigger: headerContentRef.current.children, start: 'top 70%' } })
     }, [])
 
   return (
