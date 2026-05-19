@@ -1,9 +1,9 @@
 ---
 title: Stanford Do Research
-weight: 1
+weight: 2
 external-link: https://doresearch.stanford.edu/
 teaser-image: projects/sdor/sdor.webp
 teaser-alt: Screenshot of Stanford Do Research homepage.
-intro: Stanford DoResearch is a portal helping Stanford faculty, staff, and students navigate the university's research administration processes. I helped working with a diverese team to retheme the website, configuring Drupal and building themed components in Twig, SCSS, JavaScript and PHP.
+intro: A full site retheme for Stanford's research administration portal used by faculty, staff, and students across the university. No content restructure — just a clean visual overhaul built component by component in Twig, SCSS, JavaScript, and PHP alongside a cross-functional team.
 tags: Drupal, Config, Twig, HTML, SCSS, JavaScript, PHP
 ---
