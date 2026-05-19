@@ -33,7 +33,7 @@ export default function Nav() {
           Front-End
           <span>Developer</span>
         </h2>
-        <p className={styles.headerIntro}>Front-End Developer, crafting accessible, performant web experiences across agency, enterprise, and government.</p>
+        <p className={styles.headerIntro}>I have spent 10 years living between design and development. I speak both languages and I enjoy the translation.</p>
         
 
         <nav className={styles.menu}>

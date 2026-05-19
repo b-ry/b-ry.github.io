@@ -14,9 +14,9 @@ export default async function Home() {
     <section className="pageContent">
       <ScrollAnimator />
       <div className={`${styles.introText} introText`}>
-        <p>I'm a front-end developer and designer with over 10 years of experience building accessible, responsive web experiences. I've worked across the full spectrum — from leading design teams and shaping UX strategy to writing the HTML, CSS, and JavaScript that brings it all to life. I enjoy working in the intersection of design and development, where clean robust code meets great user experience.</p>
-
-        <p>Outside of work you can generally find me biking the gravel roads of Northern Colorado , gardening, cooking and hanging out with my wife, 3 boys and pup.</p>
+        <p>I'm a front-end developer with a design background and over 10 years of agency and government web experience. I have led design teams, built component systems, and written the code that turns designs into working sites. I care about accessibility, clean markup, and getting the details right.</p>
+        <p>Most of my work has been in Drupal, though I've worked across WordPress and other platforms too. I have contributed to open-source projects and enjoy working on teams where people take the craft seriously.</p>
+        <p>When I'm not in the code you can find me on the gravel roads of Northern Colorado on my bike, in the garden, or cooking something worth sharing with my wife, three boys, and our pup.</p>
       </div>
       
       <ol id="experience" className={styles.jobList}>

@@ -2,6 +2,7 @@
 title: The Trumpet Trader Redesign Concept
 featured: false
 weight: 5
+draft: true
 category: UX/UI Design
 tags: UX Design, UI Design, Concepting
 teaser-image: projects/ttt/ttt-teaser.jpg

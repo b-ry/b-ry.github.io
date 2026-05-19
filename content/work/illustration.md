@@ -2,6 +2,7 @@
 title: Illustration
 featured: false
 weight: 4
+draft: true
 category: Illustration
 tags: Illustration, Color Separations, Screen printing
 teaser-image: projects/illustration/ill-teaser.png
