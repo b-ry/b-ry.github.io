@@ -40,6 +40,16 @@ export default function Nav() {
           <ul className={styles.menuItems}>
             <li className={styles.menuItem}>
               <Link
+                href="/about"
+                className={pathname.startsWith('about') ? 'active' : ''}
+                onClick={() => setMenuOpen(false)}
+              >
+                <span className={styles.menuItemDetail}></span>
+                <span className={styles.menuItemText}>About</span>
+              </Link>
+            </li>
+            <li className={styles.menuItem}>
+              <Link
                 href="/#experience"
                 className={pathname.startsWith('#experience') ? 'active' : ''}
                 onClick={() => setMenuOpen(false)}

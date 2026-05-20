@@ -1,0 +1,47 @@
+@use '../../styles/colors' as *;
+@use '../../styles/functions' as *;
+@use '../../styles/mixins' as *;
+
+.portrait {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+
+  @include bp-min(tablet) {
+    float: right;
+  }
+
+  @include bp-min(lg-tablet) {
+    float: none;
+    align-items: center;
+  }
+  
+  @include bp-min(desktop) {
+    float: right;
+    margin: 0 0 20px 20px;
+  }
+}
+
+.portrait img {
+  aspect-ratio: 1/1;
+  border: 4px solid $black;
+  inline-size: 100%;
+  block-size: auto;
+
+  @include bp-min(lg-tablet) {
+    inline-size: 400px;
+  }
+}
+
+.aboutMe {
+  padding: 0 40px 40px;
+
+  @include bp-min(tablet) {
+    padding: 40px;
+  }
+
+  @include bp-min(lg-tablet) {
+    padding: 0;
+  }
+}

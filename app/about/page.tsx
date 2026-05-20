@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import styles from './page.module.scss'
 
 export const metadata: Metadata = {
   title: 'About — Bryon Urbanec',
@@ -8,147 +9,34 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <>
-      <div className="about-header">
-        <div className="content-wrapper">
-          <h1>Bryon Urbanec - UI/UX Designer &amp; Front-end Developer</h1>
-          <p>
-            <span>UI/UX Designer in Northern, Colorado.</span> I strive to design and build useful
-            experiences connecting my client&apos;s products to the core of their visitors.
-          </p>
-        </div>
-        <div className="portrait">
-          <Image src="/img/theme/portrait.svg" alt="" width={200} height={200} />
+      <div className={styles.aboutHeader}>
+        <div className={styles.portrait}>
+          <Image src="/img/theme/portrait.svg" alt="" width={400} height={400} />
         </div>
       </div>
 
-      <div className="about-me">
-        <div className="about-section">
-          <div className="aboutTitleWrap">
-            <h2 className="aboutTitle">My Road</h2>
-          </div>
-          <div className="aboutContentWrap">
-            <p>
-              Over the past 11+ years I have joined forces with clients of all sizes, in many
-              industries. Together we collaborate in an iterative process of design and visitor
-              optimization.
-            </p>
-          </div>
+      <div className={styles.aboutMe}>
+        <div className={styles.aboutSection}>
+          <h3>My path here was anything but straight.</h3>
+          <p>I went to school for music, played saxophone, and spent six months living and performing on a cruise ship. It was an adventure I would not trade, but I learned quickly that making a living as a musician is a different kind of hard. So I went back to school for my first real passion, art, and focused on graphic design.</p>
+
+          <p>That lesson repeated itself. Print was shrinking and the web was getting exciting, so I followed it. I moved into web design and spent years doing what most designers do, caring deeply about how the finished product looked and feeling frustrated when the build did not match the vision. The natural solution was to learn how things were actually built. I picked up front-end development and Drupal so I could have more control over the outcome, and I ended up spending most of my career with one foot in design and one foot in development.</p>
+
+          <p>I have recently moved to front-end full time and it turns out this is where I am most at home. I genuinely enjoy understanding how things work beneath the surface, seeing the inner structure of a design, mapping out in my head how components can fit together, and asking the right questions before too many decisions get locked in. I especially enjoy tricky components with interesting responsive patterns and the challenge of finding the simplest solution to a complex problem.</p>
+
+          <p><strong>Outside of work</strong> I spend as much time as I can on my bike. Not road racing, not mountain biking, gravel roads in Northern Colorado where the traffic disappears and you can actually think. Larimer County roads over Weld County any day. I have done the Denver Century twice, 100 miles through Denver and the surrounding towns, which sounds like a good idea until about mile 70. I also garden, cook, and spend time with my wife, three boys, and our dog.</p>
+
+          <p><strong>I am currently open to new opportunities.</strong> If what you see here looks like a fit, I would love to connect.</p>
         </div>
       </div>
 
-      <div className="about-section experience">
-        <h2>Experience</h2>
-        <div className="aboutTitleWrap">
-          <div className="date">2018&ndash;Present</div>
-          <h3>RehabCreative</h3>
-          <h4>Front End Developer and Web Designer</h4>
-        </div>
-        <div className="aboutContentWrap">
-          <ul>
-            <li>
-              Manage website development projects from initial development through completion,
-              optimizing for cross-browser compatibility
-            </li>
-            <li>
-              Work closely with developers and clients to meet project requirements, goals, and
-              desired functionality.
-            </li>
-            <li>Maintained and developed new features for existing clients.</li>
-            <li>Assessed UX and UI designs for technical feasibility</li>
-          </ul>
-        </div>
-      </div>
+      
 
-      <div className="about-section experience">
-        <div className="aboutTitleWrap">
-          <div className="date">2013&ndash;2018</div>
-          <h3>NEWMEDIA</h3>
-          <h4>
-            UI/UX Design Strategist
-            <br />
-            Senior Designer
-            <br />
-            Front-end Developer
-          </h4>
-        </div>
+      
 
-        <div className="aboutContentWrap">
-          <h4>UI/UX Design Strategist</h4>
-          <p>
-            Worked closely with development team in an Agile/Scrum work flow to design
-            visually-compelling, brand-consistent, responsive, and highly-usable websites and web
-            applications for PaaS/SaaS, B2B, and B2C clients.
-          </p>
-          <ul>
-            <li>Lead User Experience and User Interface designer for responsive web sites and web applications.</li>
-            <li>Partnered with clients to create solutions that support and build brand presence and meet business requirements.</li>
-            <li>Responsible for leading, developing and evolving the design process.</li>
-            <li>Developed and trained junior level design talent.</li>
-            <li>Developed and maintain tools for in browser wire-framing and design.</li>
-            <li>Designed and built fully-interactive HTML5/CSS3 prototypes with click-throughs, used for client presentations, wire-frames, and mock-ups.</li>
-            <li>Produced style guides and web interaction stylesheets for developers.</li>
-          </ul>
+      
 
-          <h4>Senior Designer</h4>
-          <p>Art direction, brand development and management of design team.</p>
-          <ul>
-            <li>Lead and developed 10 members of the design team.</li>
-            <li>Organized weekly design critiques.</li>
-            <li>Continually developed design process.</li>
-            <li>Establish best practices for creative development across all touch points.</li>
-          </ul>
-
-          <h4>Front-end Developer</h4>
-          <p>
-            Developed fully functional mobile-first responsive websites based on Business
-            Requirements using Drupal, HTML5, CSS3, and JavaScript.
-          </p>
-          <ul>
-            <li>Worked in both Agile and Waterfall settings.</li>
-            <li>Determined content structure and information architecture.</li>
-            <li>Responsible for site-building and taking completed designs through development to site completion.</li>
-            <li>Maintained brand standards under company guidelines.</li>
-            <li>Browser tested front-end code to ensure cross-browser compatibility.</li>
-            <li>Leveraged responsive frameworks such as Bootstrap and Foundation to consistently complete and deliver components on time.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="about-section">
-        <div className="aboutTitleWrap">
-          <div className="date">2010&ndash;2013</div>
-          <h3>Variant Studios</h3>
-          <h4>Web Designer + Drupal Themer</h4>
-        </div>
-        <div className="aboutContentWrap">
-          <p>
-            Worked with a variety of clients to create web solutions that successfully support and
-            build brand image, presence and meet business requirements.
-          </p>
-          <ul>
-            <li>Responsible for the design of impactful brand consistent web sites.</li>
-            <li>Creatively conceived design solutions and illustrations to support and build brand presence and awareness.</li>
-            <li>Identified and developed content and information architecture.</li>
-            <li>Built and maintained Drupal websites using HTML5, CSS3/SASS and jQuery.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="about-section education last">
-        <div className="aboutTitleWrap">
-          <h2>Education</h2>
-        </div>
-        <div className="aboutContentWrap">
-          <div className="degree border">
-            <h3>B.A. Graphic Design</h3>
-            <div>University of Northern Colorado</div>
-          </div>
-          <div className="degree border">
-            <h3>B.A. Music (Saxophone)</h3>
-            <div>University of Northern Colorado</div>
-          </div>
-        </div>
-      </div>
+      
     </>
   )
 }
