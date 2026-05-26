@@ -25,12 +25,7 @@
     border: 1px solid var(--light);
     border-radius: 1rem;
     background: var(--off);
-    .jobLink {
-      color: var(--orange);
-      svg {
-        transform: translate3d(2px, -4px, 0px);
-      }
-    }
+    
     .tag {
       background: var(--white);
     }
@@ -67,7 +62,7 @@
 .jobCompany {
   font-size: 2rem;
   margin: 0 0 .4rem;
-  display: flex;
+  display: inline-block;
   align-items: center;
   gap: 1rem;
 }
@@ -75,6 +70,20 @@
 .jobLink {
   color: var(--navy);
   text-wrap: balance;
+  background-image: linear-gradient(180deg, transparent, transparent calc(100% - 2px), currentColor calc(100% - 2px), currentColor);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 0;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    background-size: 100%;
+    color: var(--orange);
+
+    svg {
+      transform: translate3d(2px, -4px, 0px);
+    }
+  }
 
   @media (prefers-reduced-motion: no-preference) {
     transition: all .3s ease-in-out;

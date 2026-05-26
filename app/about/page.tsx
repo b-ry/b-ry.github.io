@@ -29,14 +29,6 @@ export default function About() {
           <p><strong>I am currently open to new opportunities.</strong> If what you see here looks like a fit, I would love to connect.</p>
         </div>
       </div>
-
-      
-
-      
-
-      
-
-      
     </>
   )
 }

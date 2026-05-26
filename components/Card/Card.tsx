@@ -1,5 +1,6 @@
 'use client'
 
+import { useId, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
@@ -20,6 +21,10 @@ export default function Card({ item, basePath, index }: CardProps) {
   const externalLink = frontmatter['external-link']
   const internalHref = `/${basePath}/${slug}`
   const router = useRouter()
+  const [isOpen, setIsOpen] = useState(false)
+  const panelId = useId()
+
+  const hasDetails = !!item.contentHtml?.trim()
 
   function handleCardClick() {
     if (window.getSelection()?.toString()) return
@@ -28,6 +33,14 @@ export default function Card({ item, basePath, index }: CardProps) {
     } else {
       router.push(internalHref)
     }
+  }
+
+  const ariaExpanded = (isOpen ? 'true' : 'false') as 'true' | 'false'
+  const ariaHidden = isOpen ? undefined : ('true' as const)
+
+  function handleToggle(e: React.MouseEvent) {
+    e.stopPropagation()
+    setIsOpen((prev) => !prev)
   }
 
   return (
@@ -69,7 +82,43 @@ export default function Card({ item, basePath, index }: CardProps) {
               </Link>
             )}
           </h3>
-          <p>{frontmatter.intro}</p>
+          {hasDetails && (
+            <button
+              type="button"
+              className={styles.detailsToggle}
+              aria-expanded={ariaExpanded}
+              aria-controls={panelId}
+              onClick={handleToggle}
+            >
+              <span className={styles.detailsToggleIcon} aria-hidden="true">
+                {isOpen ? (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                  </svg>
+                ) : (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                  </svg>
+                )}
+              </span>
+              View Project Details
+            </button>
+          )}
+          {hasDetails && (
+            <div
+              id={panelId}
+              className={clsx(styles.detailsPanel, { [styles.detailsPanelOpen]: isOpen })}
+              aria-hidden={ariaHidden}
+            >
+              <div className={styles.detailsPanelInner}>
+                <div
+                  className={styles.detailsBody}
+                  dangerouslySetInnerHTML={{ __html: item.contentHtml ?? '' }}
+                />
+              </div>
+            </div>
+          )}
           {frontmatter.tags && <TagList tags={frontmatter.tags} />}
         </div>
       </div>
