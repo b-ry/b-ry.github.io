@@ -5,7 +5,7 @@ service: Front-end Developer
 external-link: http://atendesigngroup.com
 dates: 2022 — 2026
 jobtitle: Front-End Developer
-tags: Drupal 11, WordPress, Twig, HTML & SCSS, JavaScript, Jquery, PHP
+tags: Drupal 10/11, WordPress, Twig, HTML & SCSS, JavaScript, Jquery, PHP
 ---
 
-Build and maintain responsive Drupal and WordPress sites for a diverse range of clients. Contribute to open-source Drupal projects including Mercury Editor and the Prototype Starter Theme. Develop scalable, reusable components using Single Directory Components (SDC) and implement JavaScript and jQuery solutions to enhance accessibility, animations, and user interactions. Maintain Drupal core and contributed modules, support CI/CD pipelines, and collaborate directly with clients and a cross-functional team of developers, designers, and project managers to deliver accessible, standards-compliant web experiences.
+Built and maintained responsive Drupal 10/11 and WordPress sites for government, university, and nonprofit clients. Developed reusable component systems using Single Directory Components (SDC), Twig, and SCSS, implementing JavaScript and jQuery to drive accessibility improvements, animations, and interactive user experiences. Contributed to open-source Drupal projects including Mercury Editor and the Prototype Starterkit. Managed Drupal core and contributed module updates across 10+ client sites, supported CI/CD deployment pipelines, and collaborated across developers, designers, and project managers in Agile sprint workflows.

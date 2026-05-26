@@ -8,4 +8,4 @@ jobtitle: Web Designer + Drupal Themer
 tags: Drupal, HTML, CSS3, Jquery
 --- 
 
-Build fully functional, mobile-first responsive websites using Drupal, HTML5, CSS3, and JavaScript. Work across Agile and Waterfall project environments to take designs from concept through to browser-tested, production-ready code. Define content structure and information architecture, maintain brand standards, and leverage responsive frameworks to deliver components on schedule.
+Built mobile-first responsive websites in Drupal, HTML5, CSS3, and JavaScript, taking designs from concept through browser-tested, production-ready code. Themed Drupal sites with custom CSS and template overrides, defined content structure and information architecture, and delivered components on schedule across Agile and Waterfall project environments.

@@ -8,4 +8,4 @@ jobtitle: Front-End Developer and Web Designer
 tags: Drupal, Twig, JavaScript, SCSS
 ---
 
-Lead UX and UI design for responsive web applications and sites across PaaS, SaaS, B2B, and B2C clients. Build and maintain interactive HTML5/CSS3 prototypes, design systems, and front-end tooling used across the team. Work closely with developers, clients, and stakeholders to translate business requirements into user-centered, brand-consistent solutions. Deliver projects within Agile/Scrum workflows using JavaScript, jQuery, Bootstrap, and Foundation.
+Built responsive front-end interfaces and design systems for web applications across B2B and B2C clients. Developed interactive HTML5/CSS3 prototypes and reusable front-end component libraries used across the team. Implemented Drupal theming with Twig and SCSS, and delivered JavaScript and jQuery solutions within Agile/Scrum workflows. Translated stakeholder requirements into browser-tested, production-ready code in close collaboration with developers, designers, and clients.
