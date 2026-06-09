@@ -32,8 +32,10 @@ export default function Nav() {
         <h2 className={styles.subTitle}>
           Front-End
           <span>Developer</span>
+          <span className={styles.headerSpecialty}>UI & Accessibility Specialist</span>
         </h2>
-        <p className={styles.headerIntro}>I have spent 10 years living between design and development. I speak both languages and I enjoy the translation.</p>
+
+        <p className={styles.headerIntro}>Crafting accessible, performant web experiences, advanced Drupal architectures, and scalable component design systems across agency, enterprise, and public sectors.</p>
         
 
         <nav className={styles.menu}>

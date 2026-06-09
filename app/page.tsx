@@ -14,9 +14,8 @@ export default async function Home() {
     <section className="pageContent">
       <ScrollAnimator />
       <div className={`${styles.introText} introText`}>
-        <p>I'm a front-end developer with a design background and over 10 years of agency and government web experience. I have led design teams, built component systems, and written the code that turns designs into working sites. I care about accessibility, clean markup, and getting the details right.</p>
-        <p>Most of my work has been in Drupal, though I've worked across WordPress and other platforms too. I have contributed to open-source projects and enjoy working on teams where people take the craft seriously.</p>
-        <p>When I'm not in the code you can find me on the gravel roads of Northern Colorado on my bike, in the garden, or cooking something worth sharing with my wife, three boys, and our pup.</p>
+        <p>I am a Front-End Engineer with over a decade of experience crafting accessible, performance-driven user interfaces across agency, enterprise, and public sectors. My engineering philosophy centers on semantic HTML, robust CSS/SASS architecture, and strict adherence to WCAG 2.1 and Section 508 accessibility compliance.</p>
+        <p>While I work extensively within the modern Drupal ecosystem—architecting scalable design systems using Single Directory Components (SDC) and advanced Twig templating—I approach the web through a platform-agnostic lens. I specialize in bridging the gap between high-fidelity UI design and clean, compliant, and component-driven production code. Whether optimization requires tuning server-side rendering layouts or modernizing client-facing interactions, my goal is always to deliver digital experiences that are inclusive, intuitive, and built to scale.  </p>
       </div>
       
       <ol id="experience" className={styles.jobList}>
