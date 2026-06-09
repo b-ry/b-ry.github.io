@@ -109,7 +109,7 @@ export default function Nav() {
           </li>
           <li className={styles.socialMenuItem}>
             <Link
-            href="bryonurbanec-resume.pdf" 
+            href="Bryon_Urbanec_Resume.pdf" 
             onClick={() => setMenuOpen(false)}
             >
               <span className={styles.socialIcon}>
