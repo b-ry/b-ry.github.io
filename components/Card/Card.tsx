@@ -82,6 +82,7 @@ export default function Card({ item, basePath, index }: CardProps) {
               </Link>
             )}
           </h3>
+          <p>{frontmatter.intro}</p>
           {hasDetails && (
             <button
               type="button"

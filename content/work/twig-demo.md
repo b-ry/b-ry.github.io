@@ -1,15 +1,12 @@
 ---
 title: Twig Card Component - Demo
-weight: -1
+weight: 6
 external-link: https://bryonurbanec.com/twig-demo/
 teaser-image: projects/twig-demo/teaser.png
 teaser-alt: Screenshot of food cards UI Kit.
-intro: A standalone Twig and PHP prototyping environment for building Drupal components without a full CMS install. The template naming, namespace structure, and Sass patterns mirror Drupal's own conventions so anything built here drops cleanly into a production theme. Built around a food card UI kit to demonstrate accessible, reusable component architecture with CSS custom properties.
+intro: This project is a standalone Twig and PHP prototyping environment for building Drupal components without a full CMS install. The template naming, namespace structure, and Sass patterns mirror Drupal's own conventions so anything built here drops cleanly into a production theme. Built around a food card UI kit to demonstrate accessible, reusable component architecture with CSS custom properties.
 tags: PHP, JavaScript, Twig, SCSS
 ---
-
-This project is a standalone Twig and PHP prototyping environment for building Drupal components without a full CMS install. The template naming, namespace structure, and Sass patterns mirror Drupal's own conventions so anything built here drops cleanly into a production theme. Built around a food card UI kit to demonstrate accessible, reusable component architecture with CSS custom properties.
-
 
 - __Drupal-compatible from the start__: I've structured templates, Twig namespaces, and Sass the same way Drupal expects them, so I'm not translating anything when it's time to ship
 - __Custom Attribute class shim__: I wrote a PHP class that replicates Drupal's native attributes object so Twig templates behave the same as they would inside a real Drupal environment
